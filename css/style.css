@@ -1,0 +1,570 @@
+@font-face {
+  font-family: 'font';
+  src: url("../fuentes/swatch-webfont.eot");
+  src: url("../fuentes/swatch-webfont.eot?#iefix") format('embedded-opentype'), url("../fuentes/swatch-webfont.woff2") format('woff2'), url("../fuentes/swatch-webfont.woff") format('woff'), url("../fuentes/swatch-webfont.ttf") format('truetype'), url("../fuentes/swatch-webfont.svg#swatch_itregular") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'fontInfo';
+  src: url("../fuentes/8936-webfont.eot");
+  src: url("../fuentes/8936-webfont.eot?#iefix") format('embedded-opentype'), url("../fuentes/8936-webfont.woff2") format('woff2'), url("../fuentes/8936-webfont.woff") format('woff'), url("../fuentes/8936-webfont.ttf") format('truetype'), url("../fuentes/8936-webfont.svg#square721_ex_btroman") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+a {
+  text-decoration: none;
+}
+body {
+  background: url("../Resources/fondo.jpg") no-repeat center center fixed;
+  background-size: 100.5% 100.5%;
+}
+body header {
+  width: 100%;
+  position: relative;
+}
+body header .cabecera {
+  margin: 0 auto;
+}
+body header .cabecera .logo {
+  float: left;
+}
+body header .cabecera .fabrica {
+  font-family: font, regular;
+  color: #fff;
+  margin: -10px;
+}
+body header .cabecera .de {
+  margin: auto;
+  font-family: font, regular;
+  color: #fff;
+}
+body header .cabecera .medios {
+  margin: auto;
+  font-family: font, regular;
+  color: #fff;
+}
+body header .cabecera .soluciones {
+  margin: auto;
+  font-family: font, regular;
+  color: #fff;
+}
+body section {
+  position: relative;
+}
+body section .menu div h3 {
+  font-family: 'Amaranth', sans-serif;
+}
+body section .menu div p {
+  font-family: font, regular;
+}
+body section .menu .servicios {
+  background-color: #fff;
+}
+body section .menu .servicios h3,
+body section .menu .servicios p {
+  color: #1f4079;
+}
+body section .menu .trabajo {
+  background: linear-gradient(to right top, #02649d 22%, #1f4079 57%);
+}
+body section .menu .trabajo h3,
+body section .menu .trabajo p {
+  color: #fff;
+}
+body section .menu .clientes {
+  background: linear-gradient(to right top, #02649d 22%, #1f4079 57%);
+}
+body section .menu .clientes h3,
+body section .menu .clientes p {
+  color: #fff;
+}
+body section .menu .impresos {
+  background-color: #fff;
+}
+body section .menu .impresos h3,
+body section .menu .impresos p {
+  color: #1f4079;
+}
+body footer {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+}
+body footer .contactenos {
+  margin: 0 auto;
+}
+body footer .contactenos p {
+  color: #fff;
+  font-family: font;
+  display: inline-block;
+}
+body footer .info {
+  color: #808080;
+  font-family: fontInfo;
+  width: 100%;
+}
+body footer .info p {
+  text-align: center;
+  width: 100%;
+}
+.display {
+  display: inline-block;
+}
+/*estilos vertical 640px< */
+@media only screen and (max-width: 40em) {
+  body header {
+    margin-top: 15px;
+    height: 13vh;
+  }
+  body header .cabecera {
+    width: 47.5%;
+    height: 100%;
+  }
+  body header .cabecera .logo {
+    width: 43%;
+    height: 100%;
+  }
+  body header .cabecera .fabrica {
+    font-size: 4.3vh;
+  }
+  body header .cabecera .de {
+    font-size: 2.3vh;
+  }
+  body header .cabecera .medios {
+    font-size: 2.8vh;
+  }
+  body header .cabecera .soluciones {
+    font-size: 1.2vh;
+  }
+  body section {
+    margin: 10% 7%;
+    height: 60vh;
+  }
+  body section .menu {
+    display: block;
+    height: 50%;
+  }
+  body section .menu div {
+    position: relative;
+    height: 80%;
+    margin-bottom: 5%;
+    width: 90%;
+    margin: 0px;
+    border-radius: 20px;
+  }
+  body section .menu div h3 {
+    display: none;
+  }
+  body section .menu div p {
+    position: absolute;
+    font-size: 3vh;
+  }
+  body section .menu div img {
+    vertical-align: middle;
+    position: absolute;
+    right: 0px;
+    height: 6vh;
+    bottom: 0px;
+    float: right;
+  }
+  body section .menu .servicios:after {
+    bottom: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(136,183,213,0);
+    border-bottom-color: #fff;
+    border-width: 2.5vh;
+    margin-left: -2.5vh;
+  }
+  body section .menu .servicios img {
+    right: 10%;
+    bottom: 10%;
+  }
+  body section .menu .servicios p {
+    left: 10%;
+    top: 10%;
+  }
+  body section .menu .trabajo:after {
+    left: 100%;
+    top: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(136,183,213,0);
+    border-left-color: #1f4079;
+    border-width: 2.5vh;
+    margin-top: -2.5vh;
+  }
+  body section .menu .trabajo img {
+    left: 10%;
+    bottom: 10%;
+  }
+  body section .menu .trabajo p {
+    right: 15%;
+    float: right;
+    top: 10%;
+    text-align: right;
+  }
+  body section .menu .clientes:after {
+    right: 100%;
+    top: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(136,183,213,0);
+    border-right-color: #1f4079;
+    border-width: 2.5vh;
+    margin-top: -2.5vh;
+  }
+  body section .menu .clientes img {
+    top: 10%;
+    right: 10%;
+  }
+  body section .menu .clientes p {
+    bottom: 10%;
+    left: 10%;
+  }
+  body section .menu .impresos:after {
+    top: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(136,183,213,0);
+    border-top-color: #fff;
+    border-width: 2.5vh;
+    margin-left: -2.5vh;
+  }
+  body section .menu .impresos img {
+    top: 10%;
+    left: 10%;
+  }
+  body section .menu .impresos p {
+    bottom: 10%;
+    right: 10%;
+  }
+  body footer {
+    text-align: center;
+    bottom: 2%;
+  }
+  body footer .contactenos {
+    width: 50%;
+    height: 3vh;
+    margin-bottom: 5%;
+  }
+  body footer .contactenos img {
+    height: 3vh;
+    position: relative;
+  }
+  body footer .contactenos p {
+    font-size: 2vh;
+    position: relative;
+    vertical-align: 0%;
+  }
+  body footer .info p {
+    line-height: 2vh;
+    font-size: 1.5vh;
+  }
+}
+/*estilos horizontal 640px<*/
+@media only screen and (max-width: 40em) and (orientation: landscape) {
+  body header {
+    margin-top: 5vh;
+    height: 16vh;
+  }
+  body header .cabecera {
+    height: 100%;
+    width: 23%;
+  }
+  body header .cabecera .logo {
+    height: 100%;
+    width: 40%;
+  }
+  body header .cabecera .fabrica {
+    font-size: 3.6vw;
+  }
+  body header .cabecera .de {
+    font-size: 1.3vw;
+  }
+  body header .cabecera .medios {
+    font-size: 2.5vw;
+  }
+  body header .cabecera .soluciones {
+    font-size: 1.1vw;
+  }
+  body section {
+    margin: 3% 15%;
+  }
+  body section .menu div {
+    left: 5%;
+  }
+  body section .menu div p {
+    font-size: 3vw;
+  }
+  body footer {
+    height: 10%;
+    bottom: 0%;
+  }
+  body footer .contactenos {
+    width: 25%;
+    margin-bottom: 0%;
+    text-align: left;
+    position: relative;
+    float: right;
+    display: inline-block;
+    height: 50%;
+    padding: 0;
+  }
+  body footer .contactenos img {
+    margin-top: -10px;
+    position: relative;
+    height: 100%;
+  }
+  body footer .contactenos p {
+    font-size: 2vw;
+    position: relative;
+    margin-top: 2.2%;
+    margin-left: 1%;
+    vertical-align: 25%;
+  }
+  body footer .info {
+    margin-bottom: 0%;
+    height: 100%;
+    left: 5%;
+    position: relative;
+    width: 50%;
+  }
+  body footer .info p {
+    margin-top: 1%;
+    font-size: 1.4vw;
+  }
+}
+/*estilos vertical 640px> <1024px*/
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  body header {
+    margin-top: 5vh;
+    height: 10vh;
+    background-color: #fff;
+  }
+  body header .cabecera {
+    height: 100%;
+    background-color: #008000;
+    text-align: center;
+    width: 35%;
+  }
+  body header .cabecera .logo {
+    height: 100%;
+  }
+  body header .cabecera .fabrica {
+    font-size: 4.5vw;
+  }
+  body header .cabecera .de {
+    font-size: 2vw;
+  }
+  body header .cabecera .medios {
+    font-size: 3vw;
+  }
+  body header .cabecera .soluciones {
+    font-size: 1.275vw;
+  }
+  body section {
+    margin: 15% 10%;
+    height: 50vh;
+    width: 80%;
+    background-color: #f00;
+    position: absolute;
+  }
+  body section .menu {
+    position: relative;
+    width: 50%;
+    display: inline-block;
+    background-color: #ff0;
+    height: 50%;
+  }
+  body section .menu div {
+    border-radius: 25px;
+    width: 90%;
+    height: 90%;
+    margin: 0 auto;
+  }
+  body section .menu div h3 {
+    font-size: 7vh;
+  }
+  body section .menu div p {
+    font-size: 2vh;
+    width: 50%;
+  }
+  body section .menu div img {
+    height: 6vh;
+  }
+  body section .menu .servicios {
+    box-shadow: -15px 15px #808080;
+    top: 0px;
+  }
+  body section .menu .servicios:after,
+  body section .menu .servicios:before {
+    bottom: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+  }
+  body section .menu .servicios:after {
+    border-color: transparent;
+    border-bottom-color: #fff;
+    border-width: 30px;
+    margin-left: -30px;
+  }
+  body section .menu .servicios h3 {
+    position: relative;
+    left: 13%;
+    float: left;
+    margin-top: 0;
+  }
+  body section .menu .servicios img {
+    right: 5%;
+    bottom: 5%;
+  }
+  body section .menu .servicios p {
+    position: relative;
+    left: 13%;
+    bottom: 10vh;
+  }
+  body section .menu .trabajo {
+    box-shadow: -15px 15px 0px #808080;
+    top: 0px;
+  }
+  body section .menu .trabajo:after,
+  body section .menu .trabajo:before {
+    left: 100%;
+    top: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+  }
+  body section .menu .trabajo:after {
+    border-color: transparent;
+    border-left-color: #1f4079;
+    border-width: 30px;
+    margin-top: -30px;
+  }
+  body section .menu .trabajo h3 {
+    position: relative;
+    right: 13%;
+    float: right;
+    margin-top: 0;
+  }
+  body section .menu .trabajo img {
+    left: 5%;
+    bottom: 5%;
+  }
+  body section .menu .trabajo p {
+    float: right;
+    position: relative;
+    left: 14%;
+    margin-top: 7vh;
+  }
+  body section .menu .clientes {
+    box-shadow: -15px 15px 0px #808080;
+    bottom: 0px;
+  }
+  body section .menu .clientes:after,
+  body section .menu .clientes:before {
+    right: 100%;
+    top: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+  }
+  body section .menu .clientes:after {
+    border-color: transparent;
+    border-right-color: #1f4079;
+    border-width: 30px;
+    margin-top: -30px;
+  }
+  body section .menu .clientes h3 {
+    position: relative;
+    left: 13%;
+    float: left;
+  }
+  body section .menu .clientes img {
+    right: 5%;
+    top: 5%;
+  }
+  body section .menu .clientes p {
+    float: right;
+    bottom: 5%;
+  }
+  body section .menu .impresos {
+    box-shadow: -15px 15px 0px #808080;
+    bottom: 0px;
+  }
+  body section .menu .impresos:after,
+  body section .menu .impresos:before {
+    top: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+  }
+  body section .menu .impresos:after {
+    border-color: transparent;
+    border-top-color: #fff;
+    border-width: 30px;
+    margin-left: -30px;
+  }
+  body section .menu .impresos h3 {
+    position: relative;
+    left: 13%;
+    margin-bottom: 0px;
+    float: left;
+  }
+  body section .menu .impresos img {
+    left: 5%;
+    top: 5%;
+  }
+  body section .menu .impresos p {
+    float: left;
+    position: absolute;
+    left: 13%;
+    bottom: 1vh;
+  }
+  body footer {
+    background-color: #008000;
+  }
+}
+/*estilos horizontal >640px an <1024px
+@media only screen and (min-width: 40.063em) and (max-width: 64em) and (orientation: landscape)
+estilos vertical >1024px and <1440px
+@media only screen and (min-width: 64.063em) and (max-width: 90em)
+/*estilo vertical >1440px <1920px
+@media only screen and (min-width: 90.063em) and (max-width: 120em)
+/*estilo vertical >1920px
+@media only screen and (min-width: 120.063em)*/

@@ -1,0 +1,946 @@
+fuente = 'Amaranth', sans-serif;
+azul=#1F4079
+fondo=linear-gradient(to right top, rgb(2, 100, 157) 22%, rgb(31, 64, 121) 57%)
+fondoG = -webkit-linear-gradient(right top, rgb(2, 100, 157) 22%, rgb(31, 64, 121) 57%)
+fondoM = -moz-linear-gradient(right top, rgb(2, 100, 157) 22%, rgb(31, 64, 121) 57%)
+fondoO= -o-linear-gradient(right top, rgb(2, 100, 157) 22%, rgb(31, 64, 121) 57%)
+fondoMs = -ms-linear-gradient(right top, rgb(2, 100, 157) 22%, rgb(31, 64, 121) 57%);
+degradado = -webkit-gradient(linear,left bottom,right top,color-stop(0.22, rgb(2, 100, 157)),color-stop(0.57, rgb(31, 64, 121)))
+
+@font-face {
+    font-family: 'font';
+    src: url("../fuentes/swatch-webfont.eot");
+    src: url("../fuentes/swatch-webfont.eot?#iefix") format("embedded-opentype"),
+         url("../fuentes/swatch-webfont.woff2") format("woff2"),
+         url("../fuentes/swatch-webfont.woff") format("woff"),
+         url("../fuentes/swatch-webfont.ttf") format("truetype"),
+         url("../fuentes/swatch-webfont.svg#swatch_itregular") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'fontInfo';
+    src: url('../fuentes/8936-webfont.eot');
+    src: url('../fuentes/8936-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fuentes/8936-webfont.woff2') format('woff2'),
+         url('../fuentes/8936-webfont.woff') format('woff'),
+         url('../fuentes/8936-webfont.ttf') format('truetype'),
+         url('../fuentes/8936-webfont.svg#square721_ex_btroman') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+a{
+    text-decoration none
+}
+body
+    background url('../Resources/fondo.jpg') no-repeat center center fixed
+    background-size 100.5% 100.5%
+    header
+        .titulo
+            p
+                font-family font, regular
+                color white
+                display inline-block
+            .menu
+                display none
+                color white
+        nav
+            background rgba(0,0,0, 0.4)
+            div
+                p
+                    font-family font, regular
+                h3
+                    font-family fuente
+            .cabecera
+                margin 0 auto
+                .logo
+                    float left
+                .fabrica
+                    color white
+                    margin 0px
+                .de, .medios, .soluciones
+                    margin auto
+                    color white
+            .servicios
+                background-color white
+                h3,p
+                    color azul
+            .trabajo, .clientes, .impresos
+                background fondo
+                h3,p
+                    color white
+            .contactenos
+                margin 0% 5%
+                p
+                    color white
+                    font-family font
+                    display inline-block
+    section
+        position relative      
+        .diseno, .aplicaciones, .material, .campanas
+            border-radius 10px
+            background rgba(242,242,242, 0.05)
+            h4,p
+                color white
+                font-family fontInfo
+                font-weight lighter
+            p
+                &:before
+                    content '- '
+    footer
+        bottom 0px
+        width 100%      
+        .info
+            p
+                color gray
+                font-family fontInfo
+                width 100%
+                text-align center
+/*estilo vertical 640px<*/
+@media only screen and (max-width:40em)
+    body
+        header
+            position relative
+            width 100%
+            .titulo
+                margin 5% auto
+                height 6vh
+                width 80%          
+                img
+                    height 100%
+                p
+                    font-size 5.5vw
+                    position relative
+                    vertical-align 40%
+                .menu
+                    position absolute
+                    float right
+                    right 0%
+                    display inline
+                    font-size 6vh
+                    vertical-align 50%
+            nav
+                max-width 70%
+                display none
+                .contactenos
+                    width 50%
+                    height 7vh
+                    img
+                        height 5vh
+                    p
+                        position: relative
+                        vertical-align: 40%
+                        font-size 5vw
+        section
+            margin-top 10%
+            div
+                margin 1% 5%
+                position relative
+                padding 5px
+                h4, p
+                    margin-left 7%
+                h4
+                    font-size 3.3vh
+                    padding-bottom 5%
+                p
+                    font-size 2.1vh         
+        footer
+            margin-top 5%
+            margin-bottom 2%
+            .info
+                p
+                    font-size 1.5vh    
+/*estilo horizontal 640px<*/
+@media only screen and (max-width:40em) and (orientation:landscape) 
+    body
+        header
+            height 12vh
+            .titulo
+                height 100%
+                margin-top 5vh
+                text-align center
+                img
+                    height 100%
+                p
+                    position relative
+                    vertical-align 70%
+                    font-size 5vh
+                .menu
+                    position absolute
+                    float right
+                    right 0%
+                    display inline
+                    font-size 6vw
+                    top 23%
+        section
+            margin-top 5%
+            div
+                h4
+                    padding-bottom 2%
+                    font-size 4vh
+                p
+                    font-size 2.3vh
+        footer
+            margin-top 5%
+            margin-bottom 2%
+            text-align center
+            height 5vw            
+            .info
+                margin-top 2%
+                margin-bottom 2%
+                p
+                    font-size 1.5vw
+/*estilo vertical >640px and <1024px*/
+@media only screen and (min-width:40.063em) and (max-width: 64em)
+    body
+        header
+            .titulo
+                float right
+                width 80%
+                margin-top 3% 
+                height 6.5vw
+                text-align center
+                img
+                    height 100%
+                p
+                    font-size 3vw
+                    position relative
+                    vertical-align 40%
+            nav
+                position absolute
+                height 100%
+                width 20%
+                overflow-y auto
+                .cabecera
+                    position relative
+                    margin-top 25%
+                    margin-bottom 20%
+                    img
+                        float left
+                        width 8vw
+                    .fabrica
+                        font-size 3.2vw
+                    .de, .medios
+                        margin 0
+                        display inline
+                    .de
+                        font-size 1.6vw
+                    .medios
+                        font-size 2.1vw
+                    .soluciones
+                        font-size 0.925vw
+                .servicios, .trabajo, .clientes, .impresos
+                    margin-left 15%
+                    margin-right 15%
+                    height 10%
+                    border-radius 15px 
+                    box-shadow -10px 10px gray
+                    margin-top 55%
+                    position relative
+                    img, h3, p
+                        position absolute
+                    img
+                        width 4.5vw
+                    h3
+                        font-size 5vw
+                    p
+                        font-size 1.5vw
+                .flechaAzul
+                    &:before, &:after
+                        left: 100%;
+                        top: 50%;
+                        border: solid transparent;
+                        content: " ";
+                        height: 0;
+                        width: 0;
+                        position: absolute;
+                        pointer-events: none;
+                    &:after
+                        border-color: fondo;
+                        border-left-color: azul;
+                        border-width: 1vh;
+                        margin-top: -1vh;
+                .flechaBlanca
+                    &:before, &:after
+                        left: 100%;
+                        top: 50%;
+                        border: solid transparent;
+                        content: " ";
+                        height: 0;
+                        width: 0;
+                        position: absolute;
+                        pointer-events: none;
+                    &:after
+                        border-color: fondo;
+                        border-left-color: white;
+                        border-width: 1vh;
+                        margin-top: -1vh;
+                .servicios
+                    img
+                        float right
+                        right 5%
+                        bottom 5%
+                    p, h3
+                        float left
+                        left 5px
+                    p
+                        top 50%
+                        width: 50%
+                    h3
+                        margin-top 0%
+                .trabajo
+                    img
+                        float left
+                        left 5%
+                        bottom 5%
+                    p, h3
+                        float right
+                        right 5%
+                    p
+                        top 50%
+                        width 50%
+                        text-align right
+                    h3
+                        top 0%
+                .clientes
+                    img
+                        float right
+                        top 5%
+                        right 5%
+                    p, h3
+                        float left
+                        left 5%
+                    p
+                        width 50%
+                        bottom 5%
+                        text-align left
+                    h3
+                        bottom 30%
+                .impresos
+                    img
+                        float left
+                        left 5%
+                        top 5%
+                    h3, p
+                        float right
+                        right 5%
+                    p
+                        width: 50%
+                        text-align right
+                        bottom 5%
+                    h3
+                        bottom 15%
+                .contactenos
+                    width 90%
+                    height 2vh
+                    bottom 3%
+                    position absolute
+                    text-align center
+                    img
+                        height 2vh
+                    p
+                        position: relative
+                        vertical-align 40%
+                        font-size 1.1vh
+        section
+            width 80%
+            position relative
+            float right
+            margin-top 5%
+            div
+                margin 2% 5%
+                padding-bottom 2%
+                h4
+                    font-size 2.15vw
+                    padding 2% 3%
+                p
+                    font-size 1.5vw
+                    padding-left 3%
+        footer
+            width 80%
+            float right
+            right 0px
+            bottom 0
+            position: absolute
+            margin-bottom 2%
+            text-align center
+            .info
+                p
+                    font-size 1.1vh
+/*estilo horizontal >640px and <1024px*/
+@media only screen and (min-width:40.063em) and (max-width: 64em) and (orientation:landscape)
+    body
+        header
+            .titulo
+                height 6vh
+                margin-top 2%
+                img
+                    height 100%
+                p
+                    font-size 3.5vh
+                    margin-left 1%
+            nav
+                .cabecera
+                    margin-top 10%
+                .servicios, .trabajo, .clientes, .impresos
+                    height 7.725vw
+                    margin-top 15%
+                    img
+                        width 7vh
+                    h3
+                        font-size 6.5vh
+                    p
+                        font-size 2vh
+                .contactenos
+                    bottom 2%
+                    height 2vh
+                    img
+                        height 2vh
+                    p
+                        font-size 1.3vh
+                        position: relative
+                        vertical-align 35%
+        section
+            margin-top 2%
+            div
+                h4
+                    font-size 2.5vh
+                p
+                    font-size 2vh
+        footer
+            position: relative
+            .info
+                p
+                    font-size 1vh
+@media only screen and (min-width:40.063em) and (max-width: 64em) and (min-height: 600px) and (orientation:landscape)
+    body
+        header
+            nav
+                .servicios, .trabajo, .clientes, .impresos
+                    height 13.75%
+/*estilo vertical >1024 and <1440px*/
+@media only screen and (min-width:64.063em) and (max-width: 90em)
+    body
+        header
+            .titulo
+                float right
+                width 85%
+                margin-top 2% 
+                height 7vh
+                text-align center
+                img
+                    height 100%
+                p
+                    font-size 4vh
+                    position relative
+                    vertical-align 40%
+                    margin-left 0.5%
+            nav
+                position absolute
+                height 100%
+                width 15%
+                overflow-y auto
+                .cabecera
+                    position relative
+                    margin-top 15%
+                    margin-bottom 10%
+                    img
+                        float left
+                        width 8vh
+                    .fabrica
+                        font-size 3.2vh
+                    .de, .medios
+                        margin 0
+                        display inline
+                    .de
+                        font-size 1.6vh
+                    .medios
+                        font-size 2.1vh
+                    .soluciones
+                        font-size 0.925vh
+                .servicios, .trabajo, .clientes, .impresos
+                    margin-left 10%
+                    margin-right 25%
+                    height 15%
+                    border-radius 15px 
+                    box-shadow -10px 10px gray
+                    margin-top 20%
+                    position relative
+                    img, h3, p
+                        position absolute
+                    img
+                        width 4.5vh
+                    h3
+                        font-size 5vh
+                    p
+                        font-size 1.5vh
+                .flechaAzul
+                    &:before, &:after
+                        left: 100%;
+                        top: 50%;
+                        border: solid transparent;
+                        content: " ";
+                        height: 0;
+                        width: 0;
+                        position: absolute;
+                        pointer-events: none;
+                    &:after
+                        border-color: fondo;
+                        border-left-color: azul;
+                        border-width: 1.9vw;
+                        margin-top: -2.5vh;
+                .flechaBlanca
+                    &:before, &:after
+                        left: 100%;
+                        top: 50%;
+                        border: solid transparent;
+                        content: " ";
+                        height: 0;
+                        width: 0;
+                        position: absolute;
+                        pointer-events: none;
+                    &:after
+                        border-color: fondo;
+                        border-left-color: white;
+                        border-width: 1.9vw;
+                        margin-top: -2.5vh;
+                .servicios
+                    img
+                        float right
+                        right 5%
+                        bottom 5%
+                    p, h3
+                        float left
+                        left 5px
+                    p
+                        top 40%
+                        width 50%
+                    h3
+                        top 5%
+                .trabajo
+                    img
+                        float left
+                        left 5%
+                        bottom 5%
+                    p, h3
+                        float right
+                        right 5%
+                    p
+                        top 40%
+                        width 50%
+                        text-align right
+                    h3
+                        top 5%
+                .clientes
+                    img
+                        float right
+                        top 5%
+                        right 5%
+                    p, h3
+                        float left
+                        left 5%
+                    p
+                        width 50%
+                        bottom 5%
+                        text-align left
+                    h3
+                        bottom 30%
+                .impresos
+                    img
+                        float left
+                        left 5%
+                        top 5%
+                    h3, p
+                        float right
+                        right 5%
+                    p
+                        text-align right
+                        bottom 5%
+                    h3
+                        bottom 15%
+                .contactenos
+                    width 90%
+                    height 1.5vh
+                    bottom 2%
+                    position: absolute
+                    text-align center
+                    img
+                        height 1.5vh
+                    p
+                        position: relative
+                        vertical-align 40%
+                        font-size 1.3vh
+        section
+            width 85%
+            position relative
+            float right
+            margin-top 3%
+            div
+                margin 2% 5%
+                padding-bottom 2%
+                h4
+                    font-size 2vw
+                    padding 2% 3%
+                p
+                    font-size 1vw
+                    padding-left 3%
+        footer
+            width 80%
+            float right
+            right 0px
+            bottom 1%
+            position: absolute
+            margin-bottom 2%
+            text-align center
+/*estilo horizontal >1024px and <1440px*/
+@media only screen and (min-width:64.063em) and (max-width: 90em) and (orientation:landscape)
+    body
+        header
+            .titulo
+                float right
+                width 85%
+                margin-top 2% 
+                height 7vh
+                text-align center
+                img
+                    height 100%
+                p
+                    font-size 4vh
+                    position relative
+                    vertical-align 40%
+                    margin-left 0.5%
+            nav
+                position absolute
+                height 100%
+                width 15%
+                overflow-y auto
+                .cabecera
+                    position relative
+                    margin-top 15%
+                    margin-bottom 5%
+                    img
+                        float left
+                        width 5.5vw
+                    .fabrica
+                        font-size 2.5vw
+                    .de, .medios
+                        margin 0
+                        display inline
+                    .de
+                        font-size 1.2vw
+                    .medios
+                        font-size 1.7vw
+                    .soluciones
+                        font-size 0.725vw
+                .servicios, .trabajo, .clientes, .impresos
+                    margin-left 15%
+                    margin-right 25%
+                    height 13%
+                    border-radius 15px 
+                    box-shadow -10px 10px gray
+                    margin-top 15%
+                    position relative
+                    img, h3, p
+                        position absolute
+                    img
+                        width 4.5vh
+                    h3
+                        font-size 5vh
+                    p
+                        font-size 1.5vh
+                .flechaAzul
+                    &:before, &:after
+                        left: 100%;
+                        top: 50%;
+                        border: solid transparent;
+                        content: " ";
+                        height: 0;
+                        width: 0;
+                        position: absolute;
+                        pointer-events: none;
+                    &:after
+                        border-color: fondo;
+                        border-left-color: azul;
+                        border-width: 1.3vw;
+                        margin-top: -2.5vh;
+                .flechaBlanca
+                    &:before, &:after
+                        left: 100%;
+                        top: 50%;
+                        border: solid transparent;
+                        content: " ";
+                        height: 0;
+                        width: 0;
+                        position: absolute;
+                        pointer-events: none;
+                    &:after
+                        border-color: fondo;
+                        border-left-color: white;
+                        border-width: 1.3vw;
+                        margin-top: -2.5vh;
+                .servicios
+                    img
+                        float right
+                        right 5%
+                        bottom 5%
+                    p, h3
+                        float left
+                        left 5px
+                    p
+                        top 40%
+                        width 50%
+                    h3
+                        top 1%
+                .trabajo
+                    img
+                        float left
+                        left 5%
+                        bottom 5%
+                    p, h3
+                        float right
+                        right 5%
+                    p
+                        top 40%
+                        width 50%
+                        text-align right
+                    h3
+                        top 1%
+                .clientes
+                    img
+                        float right
+                        top 5%
+                        right 5%
+                    p, h3
+                        float left
+                        left 5%
+                    p
+                        width 50%
+                        bottom 5%
+                        text-align left
+                    h3
+                        bottom 30%
+                .impresos
+                    img
+                        float left
+                        left 5%
+                        top 5%
+                    h3, p
+                        float right
+                        right 5%
+                    p
+                        text-align right
+                        bottom 5%
+                    h3
+                        bottom 15%
+                .contactenos
+                    width 90%
+                    height 2vh
+                    bottom 3%
+                    position: absolute
+                    text-align center
+                    img
+                        height 2vh
+                    p
+                        position: relative
+                        vertical-align 40%
+                        font-size 1.3vh
+        section
+            width 85%
+            position relative
+            float right
+            margin-top 3%
+            div
+                margin 2% 5%
+                padding-bottom 2%
+                h4
+                    font-size 2vw
+                    padding 2% 3%
+                p
+                    font-size 1vw
+                    padding-left 3%
+        footer
+            width 80%
+            float right
+            right 0px
+            bottom 1%
+            margin-bottom 2%
+            text-align center
+            position relative
+            font-size 1.5vh
+/*estilo vertical >1440px and <1920px*/
+@media only screen and (min-width:90.063em) and (max-width: 120em)
+    body
+        header
+            .titulo
+                float right
+                width 85%
+                margin-top 2% 
+                height 6vh
+                text-align center
+                img
+                    height 100%
+                p
+                    font-size 3.25vh
+                    position relative
+                    vertical-align 40%
+                    margin-left 1%
+            nav
+                position absolute
+                height 100%
+                width 12.5%
+                overflow-y auto
+                .cabecera
+                    position relative
+                    margin 15% auto
+                    margin-bottom 20%
+                    img
+                        float left
+                        width 8vh
+                    .fabrica
+                        font-size 3.175vh
+                    .de, .medios
+                        margin 0
+                        display inline
+                    .de
+                        font-size 1.5vh
+                    .medios
+                        font-size 2vh
+                    .soluciones
+                        font-size 0.875vh
+                .servicios, .trabajo, .clientes, .impresos
+                    margin-left 15%
+                    margin-right 25%
+                    height 15%
+                    border-radius 15px 
+                    box-shadow -10px 10px gray
+                    margin-top 12%
+                    position relative
+                    img, h3, p
+                        position absolute
+                    img
+                        width 4vh
+                    h3
+                        font-size 5vh
+                    p
+                        font-size 1.5vh
+                .flechaAzul
+                    &:before, &:after
+                        left: 100%;
+                        top: 50%;
+                        border: solid transparent;
+                        content: " ";
+                        height: 0;
+                        width: 0;
+                        position: absolute;
+                        pointer-events: none;
+                    &:after
+                        border-color: fondo;
+                        border-left-color: azul;
+                        border-width: 1.3vw;
+                        margin-top: -2vh;
+                .flechaBlanca
+                    &:before, &:after
+                        left: 100%;
+                        top: 50%;
+                        border: solid transparent;
+                        content: " ";
+                        height: 0;
+                        width: 0;
+                        position: absolute;
+                        pointer-events: none;
+                    &:after
+                        border-color: fondo;
+                        border-left-color: white;
+                        border-width: 1.3vw;
+                        margin-top: -2vh;
+                .servicios
+                    img
+                        float right
+                        right 5%
+                        bottom 5%
+                    p, h3
+                        float left
+                        left 5%
+                    p
+                        top 39%
+                        width 50%
+                    h3
+                        top 5%
+                .trabajo
+                    img
+                        float left
+                        left 5%
+                        bottom 5%
+                    p, h3
+                        float right
+                        right 5%
+                    p
+                        top 40%
+                        width 50%
+                        text-align right
+                    h3
+                        top 5%
+                .clientes
+                    img
+                        float right
+                        top 5%
+                        right 5%
+                    p, h3
+                        float left
+                        left 5%
+                    p
+                        width 50%
+                        bottom 5%
+                        text-align left
+                    h3
+                        bottom 30%
+                .impresos
+                    img
+                        float left
+                        left 5%
+                        top 5%
+                    h3, p
+                        float right
+                        right 5%
+                    p
+                        text-align right
+                        bottom 5%
+                    h3
+                        bottom 15%
+                .contactenos
+                    position absolute
+                    width 90%
+                    height 3vh
+                    bottom 2%
+                    text-align center
+                    img
+                        height 3vh
+                    p
+                        position: relative
+                        vertical-align 50%
+                        font-size 1.3vh     
+        section
+            width 85%
+            position relative
+            float right
+            margin-top 3%
+            div
+                margin 0.5% 5%
+                padding-bottom 1%
+                h4
+                    font-size 2vh
+                    padding 1% 3%
+                p
+                    font-size 1.3vh
+                    padding-left 3%
+        footer
+            width 85%
+            float right
+            right 0px
+            bottom 0
+            position: absolute
+            margin-bottom 2%
+            text-align center
+            p
+                font-size 1.3vh
+    
