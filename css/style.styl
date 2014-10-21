@@ -47,7 +47,7 @@ body
 			.fabrica
 				font-family font, regular
 				color white
-				margin -10px
+				margin -15px
 			.de
 				margin auto
 				font-family font, regular
@@ -64,6 +64,7 @@ body
 		position relative
 		.menu
 			div
+				position: absolute
 				h3
 					font-family fuente
 				p
@@ -118,6 +119,7 @@ body
 					height 100%
 				.fabrica
 					font-size 4.3vh
+					padding-bottom 4%
 				.de
 					font-size 2.3vh
 				.medios
@@ -204,7 +206,7 @@ body
 						position: absolute;
 						pointer-events: none;
 						border-color: rgba(136, 183, 213, 0);
-						border-right-color: azul;
+						border-right-color: rgb(2, 100, 157);
 						border-width: 2.5vh;
 						margin-top: -2.5vh;
 					}
@@ -316,34 +318,33 @@ body
 	body
 		header
 			margin-top 5vh
-			height 10vh
-			background-color white
+			height 17vw
 			.cabecera
 				height 100%
-				background-color green
 				text-align center
-				width 35%
+				width 45%
 				.logo
 					height 100%
 				.fabrica
-					font-size 4.5vw
+					font-size 7.2vw
 				.de
-					font-size 2vw
+					font-size 3.325vw
+					margin-right 2%
 				.medios
-					font-size 3vw
+					font-size 5.2vw
+					margin -10px
 				.soluciones
-					font-size 1.275vw
+					font-size 2.175vw
+					padding-right 0
 		section
-			margin 15% 10%
-			height 50vh
+			margin 8vh 10vw
+			height 60vh
 			width 80%
-			background-color red
 			position: absolute
 			.menu
 				position relative
 				width 50%
 				display inline-block
-				background-color: yellow
 				height 50%
 				div
 					border-radius 25px
@@ -351,16 +352,16 @@ body
 					height 90%
 					margin 0 auto
 					h3
-						font-size 7vh
+						font-size 8.5vh
 					p 
-						font-size 2vh
+						font-size 2.5vh
 						width: 50%
 					img
-						height 6vh
+						height 4.5vh
 				.servicios
 					box-shadow -15px 15px gray
 					top 0px
-					&:after, &:before {
+					&:after {
 						bottom: 100%;
 						left: 50%;
 						border: solid transparent;
@@ -369,29 +370,28 @@ body
 						width: 0;
 						position: absolute;
 						pointer-events: none;
-					}
-					&:after {
-						border-color: transparent;
+						border-color: rgba(136, 183, 213, 0);
 						border-bottom-color: white;
-						border-width: 30px;
-						margin-left: -30px;
+						border-width: 2.5vh;
+						margin-left:  -2.5vh;
 					}
 					h3
 						position relative
 						left 13%
 						float left
-						margin-top 0
+						margin-bottom 0
 					img
-						right 5%
-						bottom 5%
+						position: absolute
+						right 2.5vh
+						bottom 2.5vh
 					p
 						position relative
 						left 13%
-						bottom 10vh
+						top -5%
 				.trabajo
 					box-shadow -15px 15px 0px gray
 					top 0px
-					&:after, &:before {
+					&:after {
 						left: 100%;
 						top: 50%;
 						border: solid transparent;
@@ -400,30 +400,29 @@ body
 						width: 0;
 						position: absolute;
 						pointer-events: none;
-					}
-					&:after {
-						border-color: transparent;
+						border-color: rgba(136, 183, 213, 0);
 						border-left-color: azul;
-						border-width: 30px;
-						margin-top: -30px;
+						border-width: 2.5vh;
+						margin-top: -2.5vh;
 					}
 					h3
-						position relative
+						position absolute
 						right 13%
 						float right
-						margin-top 0
+						margin-bottom 0
 					img
-						left 5%
-						bottom 5%
+						position absolute
+						left 2.5vh
+						bottom 2.5vh
 					p
-						float right
-						position relative
-						left 14%
-						margin-top 7vh
+						position absolute
+						top 9.5vh
+						text-align right
+						right 13%
 				.clientes
 					box-shadow -15px 15px 0px gray
 					bottom 0px
-					&:after, &:before {
+					&:after, &:before
 						right: 100%;
 						top: 50%;
 						border: solid transparent;
@@ -432,23 +431,31 @@ body
 						width: 0;
 						position: absolute;
 						pointer-events: none;
-					}
-					&:after {
-						border-color: transparent;
-						border-right-color: azul;
-						border-width: 30px;
-						margin-top: -30px;
-					}
+					&:after
+						border-color: rgba(136, 183, 213, 0);
+						border-right-color: rgb(2, 100, 157);
+						border-width: 2.5vh;
+						margin-top: -2.5vh;
+					&:before
+						top 45%;
+						right 103%
+						border-color: rgba(157, 183, 199, 0);
+						border-right-color: gray;
+						border-width: 2.5vh
+						margin-top: 2.5vh;
 					h3
-						position relative
+						position absolute
 						left 13%
 						float left
+						bottom 7.5vh
 					img
-						right 5%
-						top 5%
+						position: absolute
+						right 2.5vh
+						top 2.5vh
 					p
-						float right
-						bottom 5%
+						left 13%
+						bottom 1vh
+						position: absolute
 				.impresos
 					box-shadow -15px 15px 0px gray
 					bottom 0px
@@ -462,31 +469,69 @@ body
 						position: absolute;
 						pointer-events: none;
 					}
-
 					&:after {
-						border-color: transparent;
+						border-color: rgba(255, 255, 255, 0);
 						border-top-color: white;
-						border-width: 30px;
-						margin-left: -30px;
+						border-width: 2.5vh;
+						margin-left: -2.5vh;
 					}
+					&:before
+						top 103.5%
+						left 40%
+						border-color: rgba(0, 0, 0, 0);
+						border-top-color: gray;
+						border-width: 2.5vh;
+						margin-left: -2.5vh
 					h3
-						position relative
-						left 13%
-						margin-bottom 0px
-						float left
-					img
-						left 5%
-						top 5%
-					p
-						float left
 						position absolute
-						left 13%
-						bottom 1vh
+						right 13%
+						bottom 7.5vh
+					img
+						left 2.5vh
+						top 2.5vh
+						position: absolute
+					p
+						position absolute
+						right 13%
+						bottom 5vh
 		footer
-			background-color green
-/*estilos horizontal >640px an <1024px
+			margin-bottom 1.5vh
+			.contactenos
+				height 3.5vh
+				text-align center
+				img
+					height 100%
+					margin-top 0vh
+				p
+					font-size 1.75vh
+					vertical-align: -10%
+			.info
+				margin-top 1.5vh
+				padding 0%
+				p
+					font-size 2.5vw
+					margin 0%
+/*estilos horizontal >640px an <1024px*/
 @media only screen and (min-width: 40.063em) and (max-width: 64em) and (orientation: landscape)
-estilos vertical >1024px and <1440px
+	body
+		header
+			margin-top 5vh
+			height 17vh
+			.cabecera
+				width 33vw
+				background-color: green
+				.fabrica
+					font-size 4.5vw
+					margin-top 0%
+					padding 0% 0%
+				.de
+					font-size 2.3vw
+					margin-right 1.25vw
+				.medios
+					font-size 3vw
+				.soluciones
+					font-size 1.35vw
+/*estilos vertical >1024px and <1440px
 @media only screen and (min-width: 64.063em) and (max-width: 90em)
 /*estilo vertical >1440px <1920px
 @media only screen and (min-width: 90.063em) and (max-width: 120em)
