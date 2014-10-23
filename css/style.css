@@ -12,6 +12,10 @@
   font-weight: normal;
   font-style: normal;
 }
+* {
+  margin: 0;
+  padding: 0;
+}
 a {
   text-decoration: none;
 }
@@ -385,25 +389,25 @@ body footer .info p {
   }
   body header .cabecera .soluciones {
     font-size: 2.175vw;
-    padding-right: 0;
   }
   body section {
-    margin: 8vh 10vw;
+    margin: 8vh 20vw;
     height: 60vh;
-    width: 80%;
+    width: 60vw;
     position: absolute;
   }
   body section .menu {
     position: relative;
-    width: 50%;
+    width: 30vw;
     display: inline-block;
-    height: 50%;
+    height: 25vh;
   }
   body section .menu div {
-    border-radius: 25px;
+    border-radius: 15px;
     width: 90%;
     height: 90%;
     margin: 0 auto;
+    box-shadow: -15px 15px #808080;
   }
   body section .menu div h3 {
     font-size: 8.5vh;
@@ -416,7 +420,6 @@ body footer .info p {
     height: 4.5vh;
   }
   body section .menu .servicios {
-    box-shadow: -15px 15px #808080;
     top: 0px;
   }
   body section .menu .servicios:after {
@@ -434,23 +437,21 @@ body footer .info p {
     margin-left: -2.5vh;
   }
   body section .menu .servicios h3 {
-    position: relative;
+    position: absolute;
     left: 13%;
-    float: left;
-    margin-bottom: 0;
+    top: -0.5vh;
   }
   body section .menu .servicios img {
     position: absolute;
-    right: 2.5vh;
-    bottom: 2.5vh;
+    right: 2vh;
+    bottom: 2vh;
   }
   body section .menu .servicios p {
     position: relative;
     left: 13%;
-    top: -5%;
+    top: 7vh;
   }
   body section .menu .trabajo {
-    box-shadow: -15px 15px 0px #808080;
     top: 0px;
   }
   body section .menu .trabajo:after {
@@ -468,24 +469,23 @@ body footer .info p {
     margin-top: -2.5vh;
   }
   body section .menu .trabajo h3 {
-    position: absolute;
+    position: relative;
     right: 13%;
     float: right;
-    margin-bottom: 0;
+    top: -0.5vh;
   }
   body section .menu .trabajo img {
     position: absolute;
-    left: 2.5vh;
-    bottom: 2.5vh;
+    left: 2vh;
+    bottom: 2vh;
   }
   body section .menu .trabajo p {
     position: absolute;
-    top: 9.5vh;
+    top: 7vh;
     text-align: right;
     right: 13%;
   }
   body section .menu .clientes {
-    box-shadow: -15px 15px 0px #808080;
     bottom: 0px;
   }
   body section .menu .clientes:after,
@@ -517,20 +517,19 @@ body footer .info p {
     position: absolute;
     left: 13%;
     float: left;
-    bottom: 7.5vh;
+    bottom: 6vh;
   }
   body section .menu .clientes img {
     position: absolute;
-    right: 2.5vh;
-    top: 2.5vh;
+    right: 2vh;
+    top: 2vh;
   }
   body section .menu .clientes p {
     left: 13%;
-    bottom: 1vh;
+    bottom: 0vh;
     position: absolute;
   }
   body section .menu .impresos {
-    box-shadow: -15px 15px 0px #808080;
     bottom: 0px;
   }
   body section .menu .impresos:after,
@@ -551,7 +550,7 @@ body footer .info p {
     margin-left: -2.5vh;
   }
   body section .menu .impresos:before {
-    top: 103.5%;
+    top: 102.5%;
     left: 40%;
     border-color: rgba(0,0,0,0);
     border-top-color: #808080;
@@ -561,17 +560,17 @@ body footer .info p {
   body section .menu .impresos h3 {
     position: absolute;
     right: 13%;
-    bottom: 7.5vh;
+    bottom: 6vh;
   }
   body section .menu .impresos img {
-    left: 2.5vh;
-    top: 2.5vh;
+    left: 2vh;
+    top: 2vh;
     position: absolute;
   }
   body section .menu .impresos p {
     position: absolute;
-    right: 13%;
-    bottom: 5vh;
+    right: 4vh;
+    bottom: 3.5vh;
   }
   body footer {
     margin-bottom: 1.5vh;
@@ -579,6 +578,7 @@ body footer .info p {
   body footer .contactenos {
     height: 3.5vh;
     text-align: center;
+    margin-bottom: 5.5vh;
   }
   body footer .contactenos img {
     height: 100%;
@@ -593,8 +593,8 @@ body footer .info p {
     padding: 0%;
   }
   body footer .info p {
-    font-size: 2.5vw;
-    margin: 0%;
+    font-size: 2vw;
+    margin-bottom: 0.5vh;
   }
 }
 /*estilos horizontal >640px an <1024px*/
@@ -605,7 +605,6 @@ body footer .info p {
   }
   body header .cabecera {
     width: 33vw;
-    background-color: #008000;
   }
   body header .cabecera .fabrica {
     font-size: 4.5vw;
@@ -622,10 +621,424 @@ body footer .info p {
   body header .cabecera .soluciones {
     font-size: 1.35vw;
   }
+  body section {
+    margin: 6.5vh 27.5vw;
+    height: 45vh;
+    width: 45vw;
+  }
+  body section .menu {
+    width: 22.5vw;
+    height: 22.5vh;
+  }
+  body section .menu div {
+    box-shadow: -10px 10px #808080;
+  }
+  body section .menu div img {
+    height: 6vh;
+  }
+  body section .menu .servicios h3 {
+    top: -0.5vh;
+  }
+  body section .menu .servicios p {
+    top: 7vh;
+  }
+  body section .menu .trabajo h3 {
+    top: -0.5vh;
+  }
+  body section .menu .trabajo p {
+    top: 7vh;
+  }
+  body section .menu .clientes p {
+    bottom: 0vh;
+  }
+  body section .menu .clientes h3 {
+    bottom: 5.5vh;
+  }
+  body section .menu .impresos p {
+    bottom: 3.5vh;
+    right: 0vw;
+  }
+  body section .menu .impresos h3 {
+    bottom: 5.5vh;
+  }
+  body footer .contactenos {
+    margin-bottom: 5.5vh;
+  }
+  body footer .info {
+    margin-bottom: 2vh;
+  }
+  body footer .info p {
+    line-height: 150%;
+    font-size: 1.5vh;
+  }
 }
-/*estilos vertical >1024px and <1440px
-@media only screen and (min-width: 64.063em) and (max-width: 90em)
-/*estilo vertical >1440px <1920px
-@media only screen and (min-width: 90.063em) and (max-width: 120em)
-/*estilo vertical >1920px
-@media only screen and (min-width: 120.063em)*/
+/*estilos vertical >1024px and <1440px*/
+@media only screen and (min-width: 64.063em) and (max-width: 90em) {
+  body header .cabecera {
+    position: relative;
+    height: 16vh;
+    margin: 3.5vh 36.5vw;
+  }
+  body header .cabecera .logo {
+    height: 100%;
+  }
+  body header .cabecera .fabrica {
+    font-size: 4.25vw;
+  }
+  body header .cabecera .de {
+    font-size: 2.225vw;
+    margin-right: 0.25vw;
+  }
+  body header .cabecera .medios {
+    font-size: 2.7vw;
+  }
+  body header .cabecera .soluciones {
+    font-size: 1.225vw;
+  }
+  body header .cabecera p {
+    line-height: 125%;
+  }
+  body section {
+    margin: 10vh 27.5vw;
+    height: 50vh;
+  }
+  body section .menu {
+    display: inline-block;
+    height: 25vh;
+  }
+  body section .menu div {
+    margin: 0 5%;
+    width: 80%;
+    height: 90%;
+    border-radius: 10px;
+    box-shadow: -15px 15px #808080;
+  }
+  body section .menu div h3 {
+    font-size: 8.5vh;
+    position: absolute;
+  }
+  body section .menu div img {
+    width: 4vw;
+    position: absolute;
+  }
+  body section .menu div p {
+    width: 50%;
+    position: absolute;
+    font-size: 1.5vw;
+    line-height: 100%;
+  }
+  body section .menu .servicios h3 {
+    top: -0.5vh;
+    left: 13%;
+  }
+  body section .menu .servicios p {
+    left: 13%;
+    top: 8vh;
+  }
+  body section .menu .servicios img {
+    bottom: 2.5vh;
+    right: 2.5vh;
+  }
+  body section .menu .trabajo h3 {
+    top: -0.5vh;
+    right: 13%;
+  }
+  body section .menu .trabajo img {
+    bottom: 2.5vh;
+    left: 2.5vh;
+  }
+  body section .menu .trabajo p {
+    top: 8vh;
+    right: 13%;
+    text-align: right;
+  }
+  body section .menu .clientes img {
+    top: 2.5vh;
+    right: 2.5vh;
+  }
+  body section .menu .clientes p {
+    bottom: 2vh;
+    left: 13%;
+  }
+  body section .menu .clientes h3 {
+    left: 13%;
+    bottom: 6vh;
+  }
+  body section .menu .impresos img {
+    top: 2.5vh;
+    left: 2.5vh;
+  }
+  body section .menu .impresos p {
+    bottom: 4.25vh;
+    text-align: right;
+    right: 13%;
+  }
+  body section .menu .impresos h3 {
+    bottom: 6vh;
+    right: 13%;
+  }
+  body footer {
+    bottom: 2.5vh;
+    text-align: center;
+  }
+  body footer .contactenos {
+    height: 3vh;
+    bottom: 5.5vh;
+    position: relative;
+  }
+  body footer .contactenos img {
+    height: 100%;
+  }
+  body footer .contactenos p {
+    font-size: 1.2vw;
+    position: relative;
+    vertical-align: -5%;
+  }
+}
+/*estilo vertical >1440px <1920px*/
+@media only screen and (min-width: 90.063em) and (max-width: 120em) {
+  body header .cabecera {
+    position: relative;
+    height: 13vh;
+    margin: 4.5vh 40vw;
+  }
+  body header .cabecera .logo {
+    height: 100%;
+  }
+  body header .cabecera .fabrica {
+    font-size: 2.825vw;
+  }
+  body header .cabecera .de {
+    font-size: 1.35vw;
+    margin-right: 0.15vw;
+  }
+  body header .cabecera .medios {
+    font-size: 1.85vw;
+  }
+  body header .cabecera .soluciones {
+    font-size: 0.8vw;
+  }
+  body header .cabecera p {
+    line-height: 125%;
+  }
+  body section {
+    margin: 9.5vh 35vw;
+    height: 50vh;
+  }
+  body section .menu {
+    display: inline-block;
+    height: 25vh;
+  }
+  body section .menu div {
+    margin: 0 5%;
+    width: 85%;
+    height: 90%;
+    border-radius: 10px;
+    box-shadow: -15px 15px #808080;
+  }
+  body section .menu div h3 {
+    font-size: 8.5vh;
+    position: absolute;
+  }
+  body section .menu div img {
+    width: 4vw;
+    position: absolute;
+  }
+  body section .menu div p {
+    width: 50%;
+    position: absolute;
+    font-size: 1.5vw;
+    line-height: 100%;
+  }
+  body section .menu .servicios h3 {
+    top: -0.5vh;
+    left: 13%;
+  }
+  body section .menu .servicios p {
+    left: 13%;
+    top: 8vh;
+  }
+  body section .menu .servicios img {
+    bottom: 2.5vh;
+    right: 2.5vh;
+  }
+  body section .menu .trabajo h3 {
+    top: -0.5vh;
+    right: 13%;
+  }
+  body section .menu .trabajo img {
+    bottom: 2.5vh;
+    left: 2.5vh;
+  }
+  body section .menu .trabajo p {
+    top: 8vh;
+    right: 13%;
+    text-align: right;
+  }
+  body section .menu .clientes img {
+    top: 2.5vh;
+    right: 2.5vh;
+  }
+  body section .menu .clientes p {
+    bottom: 2vh;
+    left: 13%;
+  }
+  body section .menu .clientes h3 {
+    left: 13%;
+    bottom: 6vh;
+  }
+  body section .menu .impresos img {
+    top: 2.5vh;
+    left: 2.5vh;
+  }
+  body section .menu .impresos p {
+    bottom: 4.25vh;
+    text-align: right;
+    right: 13%;
+  }
+  body section .menu .impresos h3 {
+    bottom: 6vh;
+    right: 13%;
+  }
+  body footer {
+    bottom: 2.5vh;
+    text-align: center;
+  }
+  body footer .contactenos {
+    height: 3vh;
+    bottom: 5.5vh;
+    position: relative;
+  }
+  body footer .contactenos img {
+    height: 100%;
+  }
+  body footer .contactenos p {
+    font-size: 1.2vw;
+    position: relative;
+    vertical-align: -5%;
+  }
+}
+/*estilo vertical >1920px*/
+@media only screen and (min-width: 120.063em) {
+  body header .cabecera {
+    position: relative;
+    height: 13vh;
+    margin: 4.5vh 40vw;
+    background-color: #008000;
+  }
+  body header .cabecera .logo {
+    height: 100%;
+  }
+  body header .cabecera .fabrica {
+    font-size: 2.825vw;
+  }
+  body header .cabecera .de {
+    font-size: 1.35vw;
+    margin-right: 0.15vw;
+  }
+  body header .cabecera .medios {
+    font-size: 1.85vw;
+  }
+  body header .cabecera .soluciones {
+    font-size: 0.8vw;
+  }
+  body header .cabecera p {
+    line-height: 125%;
+  }
+  body section {
+    margin: 9.5vh 35vw;
+    height: 50vh;
+  }
+  body section .menu {
+    display: inline-block;
+    height: 25vh;
+  }
+  body section .menu div {
+    margin: 0 5%;
+    width: 80%;
+    height: 85%;
+    border-radius: 10px;
+    box-shadow: -15px 15px #808080;
+  }
+  body section .menu div h3 {
+    font-size: 8.5vh;
+    position: absolute;
+  }
+  body section .menu div img {
+    width: 4vw;
+    position: absolute;
+  }
+  body section .menu div p {
+    width: 50%;
+    position: absolute;
+    font-size: 1.5vw;
+    line-height: 100%;
+  }
+  body section .menu .servicios h3 {
+    top: -0.5vh;
+    left: 13%;
+  }
+  body section .menu .servicios p {
+    left: 13%;
+    top: 8vh;
+  }
+  body section .menu .servicios img {
+    bottom: 2.5vh;
+    right: 2.5vh;
+  }
+  body section .menu .trabajo h3 {
+    top: -0.5vh;
+    right: 13%;
+  }
+  body section .menu .trabajo img {
+    bottom: 2.5vh;
+    left: 2.5vh;
+  }
+  body section .menu .trabajo p {
+    top: 8vh;
+    right: 13%;
+    text-align: right;
+  }
+  body section .menu .clientes img {
+    top: 2.5vh;
+    right: 2.5vh;
+  }
+  body section .menu .clientes p {
+    bottom: 2vh;
+    left: 13%;
+  }
+  body section .menu .clientes h3 {
+    left: 13%;
+    bottom: 6vh;
+  }
+  body section .menu .impresos img {
+    top: 2.5vh;
+    left: 2.5vh;
+  }
+  body section .menu .impresos p {
+    bottom: 4.25vh;
+    text-align: right;
+    right: 13%;
+  }
+  body section .menu .impresos h3 {
+    bottom: 6vh;
+    right: 13%;
+  }
+  body footer {
+    bottom: 2.5vh;
+    text-align: center;
+  }
+  body footer .contactenos {
+    height: 3vh;
+    bottom: 5.5vh;
+    position: relative;
+  }
+  body footer .contactenos img {
+    height: 100%;
+  }
+  body footer .contactenos p {
+    font-size: 1.2vw;
+    position: relative;
+    vertical-align: -5%;
+  }
+}

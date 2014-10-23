@@ -31,6 +31,10 @@ degradado = -webkit-gradient(linear,left bottom,right top,color-stop(0.22, rgb(2
     font-style: normal;
 
 }
+*{
+	margin 0
+	padding 0
+}
 a{
 	text-decoration none
 }
@@ -335,22 +339,22 @@ body
 					margin -10px
 				.soluciones
 					font-size 2.175vw
-					padding-right 0
 		section
-			margin 8vh 10vw
+			margin 8vh 20vw
 			height 60vh
-			width 80%
+			width 60vw
 			position: absolute
 			.menu
 				position relative
-				width 50%
+				width 30vw
 				display inline-block
-				height 50%
+				height 25vh
 				div
-					border-radius 25px
+					border-radius 15px
 					width 90%
 					height 90%
-					margin 0 auto
+					margin 0 auto					
+					box-shadow -15px 15px gray
 					h3
 						font-size 8.5vh
 					p 
@@ -359,7 +363,6 @@ body
 					img
 						height 4.5vh
 				.servicios
-					box-shadow -15px 15px gray
 					top 0px
 					&:after {
 						bottom: 100%;
@@ -376,20 +379,18 @@ body
 						margin-left:  -2.5vh;
 					}
 					h3
-						position relative
+						position absolute
 						left 13%
-						float left
-						margin-bottom 0
+						top -0.5vh
 					img
 						position: absolute
-						right 2.5vh
-						bottom 2.5vh
+						right 2vh
+						bottom 2vh
 					p
 						position relative
 						left 13%
-						top -5%
+						top 7vh
 				.trabajo
-					box-shadow -15px 15px 0px gray
 					top 0px
 					&:after {
 						left: 100%;
@@ -406,21 +407,20 @@ body
 						margin-top: -2.5vh;
 					}
 					h3
-						position absolute
+						position relative
 						right 13%
 						float right
-						margin-bottom 0
+						top -0.5vh
 					img
 						position absolute
-						left 2.5vh
-						bottom 2.5vh
+						left 2vh
+						bottom 2vh
 					p
 						position absolute
-						top 9.5vh
+						top 7vh
 						text-align right
 						right 13%
 				.clientes
-					box-shadow -15px 15px 0px gray
 					bottom 0px
 					&:after, &:before
 						right: 100%;
@@ -447,17 +447,16 @@ body
 						position absolute
 						left 13%
 						float left
-						bottom 7.5vh
+						bottom 6vh
 					img
 						position: absolute
-						right 2.5vh
-						top 2.5vh
+						right 2vh
+						top 2vh
 					p
 						left 13%
-						bottom 1vh
+						bottom 0vh
 						position: absolute
 				.impresos
-					box-shadow -15px 15px 0px gray
 					bottom 0px
 					&:after, &:before {
 						top: 100%;
@@ -476,7 +475,7 @@ body
 						margin-left: -2.5vh;
 					}
 					&:before
-						top 103.5%
+						top 102.5%
 						left 40%
 						border-color: rgba(0, 0, 0, 0);
 						border-top-color: gray;
@@ -485,20 +484,21 @@ body
 					h3
 						position absolute
 						right 13%
-						bottom 7.5vh
+						bottom 6vh
 					img
-						left 2.5vh
-						top 2.5vh
+						left 2vh
+						top 2vh
 						position: absolute
 					p
 						position absolute
-						right 13%
-						bottom 5vh
+						right 4vh
+						bottom 3.5vh
 		footer
 			margin-bottom 1.5vh
 			.contactenos
 				height 3.5vh
 				text-align center
+				margin-bottom 5.5vh
 				img
 					height 100%
 					margin-top 0vh
@@ -509,8 +509,8 @@ body
 				margin-top 1.5vh
 				padding 0%
 				p
-					font-size 2.5vw
-					margin 0%
+					font-size 2vw
+					margin-bottom 0.5vh
 /*estilos horizontal >640px an <1024px*/
 @media only screen and (min-width: 40.063em) and (max-width: 64em) and (orientation: landscape)
 	body
@@ -519,7 +519,6 @@ body
 			height 17vh
 			.cabecera
 				width 33vw
-				background-color: green
 				.fabrica
 					font-size 4.5vw
 					margin-top 0%
@@ -531,9 +530,341 @@ body
 					font-size 3vw
 				.soluciones
 					font-size 1.35vw
-/*estilos vertical >1024px and <1440px
+		section
+			margin 6.5vh 27.5vw
+			height 45vh
+			width 45vw
+			.menu
+				width 22.5 vw
+				height 22.5vh
+				div
+					box-shadow -10px 10px gray
+					img
+						height 6vh
+				.servicios
+					h3
+						top -0.5vh
+					p
+						top 7vh
+				.trabajo
+					h3
+						top -0.5vh
+					p
+						top 7vh
+				.clientes
+					p
+						bottom 0vh
+					h3
+						bottom 5.5vh
+				.impresos
+					p
+						bottom 3.5vh
+						right 0vw
+					h3
+						bottom 5.5vh
+		footer
+			.contactenos
+				margin-bottom 5.5vh
+			.info
+				margin-bottom 2vh
+				p
+					line-height 150%
+					font-size 1.5vh
+/*estilos vertical >1024px and <1440px*/
 @media only screen and (min-width: 64.063em) and (max-width: 90em)
-/*estilo vertical >1440px <1920px
+	body
+		header
+			.cabecera
+				position: relative
+				height 16vh
+				margin 3.5vh 36.5vw
+				.logo
+					height 100%
+				.fabrica
+					font-size 4.25vw
+				.de
+					font-size 2.225vw
+					margin-right 0.25vw
+				.medios
+					font-size 2.7vw
+				.soluciones
+					font-size 1.225vw
+				p
+					line-height 125%
+		section
+			margin 10vh 27.5vw
+			height 50vh
+			.menu
+				display inline-block
+				height 25vh
+				div
+					margin 0 5%
+					width 80%
+					height 90%
+					border-radius 10px
+					box-shadow -15px 15px gray
+					h3
+						font-size 8.5vh
+						position: absolute
+					img
+						width 4vw
+						position: absolute
+					p
+						width 50%
+						position: absolute
+						font-size 1.5vw
+						line-height 100%
+				.servicios
+					h3
+						top -0.5vh
+						left 13%
+					p
+						left 13%
+						top 8vh
+					img
+						bottom 2.5vh
+						right 2.5vh
+				.trabajo
+					h3
+						top -0.5vh
+						right 13%
+					img
+						bottom 2.5vh
+						left 2.5vh
+					p
+						top 8vh
+						right 13%
+						text-align right
+				.clientes
+					img
+						top 2.5vh
+						right 2.5vh
+					p
+						bottom 2vh
+						left 13%
+					h3
+						left 13%
+						bottom: 6vh
+				.impresos
+					img
+						top 2.5vh
+						left 2.5vh
+					p
+						bottom 4.25vh
+						text-align right
+						right 13%
+					h3
+						bottom 6vh
+						right 13%
+		footer
+			bottom 2.5vh
+			text-align center
+			.contactenos
+				height 3vh
+				bottom 5.5vh
+				position relative
+				img
+					height 100%
+				p
+					font-size 1.2vw
+					position: relative
+					vertical-align: -5%
+/*estilo vertical >1440px <1920px*/
 @media only screen and (min-width: 90.063em) and (max-width: 120em)
-/*estilo vertical >1920px
-@media only screen and (min-width: 120.063em)*/
+	body
+		header
+			.cabecera
+				position: relative
+				height 13vh
+				margin 4.5vh 40vw
+				.logo
+					height 100%
+				.fabrica
+					font-size 2.825vw
+				.de
+					font-size 1.35vw
+					margin-right 0.15vw
+				.medios
+					font-size 1.85vw
+				.soluciones
+					font-size 0.8vw
+				p
+					line-height 125%
+		section
+			margin 9.5vh 35vw
+			height 50vh
+			.menu
+				display inline-block
+				height 25vh
+				div
+					margin 0 5%
+					width 85%
+					height 90%
+					border-radius 10px
+					box-shadow -15px 15px gray
+					h3
+						font-size 8.5vh
+						position: absolute
+					img
+						width 4vw
+						position: absolute
+					p
+						width 50%
+						position: absolute
+						font-size 1.5vw
+						line-height 100%
+				.servicios
+					h3
+						top -0.5vh
+						left 13%
+					p
+						left 13%
+						top 8vh
+					img
+						bottom 2.5vh
+						right 2.5vh
+				.trabajo
+					h3
+						top -0.5vh
+						right 13%
+					img
+						bottom 2.5vh
+						left 2.5vh
+					p
+						top 8vh
+						right 13%
+						text-align right
+				.clientes
+					img
+						top 2.5vh
+						right 2.5vh
+					p
+						bottom 2vh
+						left 13%
+					h3
+						left 13%
+						bottom: 6vh
+				.impresos
+					img
+						top 2.5vh
+						left 2.5vh
+					p
+						bottom 4.25vh
+						text-align right
+						right 13%
+					h3
+						bottom 6vh
+						right 13%
+		footer
+			bottom 2.5vh
+			text-align center
+			.contactenos
+				height 3vh
+				bottom 5.5vh
+				position relative
+				img
+					height 100%
+				p
+					font-size 1.2vw
+					position: relative
+					vertical-align: -5%
+/*estilo vertical >1920px*/
+@media only screen and (min-width: 120.063em)
+	body
+		header
+			.cabecera
+				position: relative
+				height 13vh
+				margin 4.5vh 40vw
+				background-color: green
+				.logo
+					height 100%
+				.fabrica
+					font-size 2.825vw
+				.de
+					font-size 1.35vw
+					margin-right 0.15vw
+				.medios
+					font-size 1.85vw
+				.soluciones
+					font-size 0.8vw
+				p
+					line-height 125%
+		section
+			margin 9.5vh 35vw
+			height 50vh
+			.menu
+				display inline-block
+				height 25vh
+				div
+					margin 0 5%
+					width 80%
+					height 85%
+					border-radius 10px
+					box-shadow -15px 15px gray
+					h3
+						font-size 8.5vh
+						position: absolute
+					img
+						width 4vw
+						position: absolute
+					p
+						width 50%
+						position: absolute
+						font-size 1.5vw
+						line-height 100%
+				.servicios
+					h3
+						top -0.5vh
+						left 13%
+					p
+						left 13%
+						top 8vh
+					img
+						bottom 2.5vh
+						right 2.5vh
+				.trabajo
+					h3
+						top -0.5vh
+						right 13%
+					img
+						bottom 2.5vh
+						left 2.5vh
+					p
+						top 8vh
+						right 13%
+						text-align right
+				.clientes
+					img
+						top 2.5vh
+						right 2.5vh
+					p
+						bottom 2vh
+						left 13%
+					h3
+						left 13%
+						bottom: 6vh
+				.impresos
+					img
+						top 2.5vh
+						left 2.5vh
+					p
+						bottom 4.25vh
+						text-align right
+						right 13%
+					h3
+						bottom 6vh
+						right 13%
+		footer
+			bottom 2.5vh
+			text-align center
+			.contactenos
+				height 3vh
+				bottom 5.5vh
+				position relative
+				img
+					height 100%
+				p
+					font-size 1.2vw
+					position: relative
+					vertical-align: -5%
