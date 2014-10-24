@@ -739,6 +739,20 @@ body footer .info p {
     bottom: 2.5vh;
     right: 2.5vh;
   }
+  body section .menu .servicios:after {
+    bottom: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(136,183,213,0);
+    border-bottom-color: #fff;
+    border-width: 2.5vh;
+    margin-left: -2.5vh;
+  }
   body section .menu .trabajo h3 {
     top: -0.5vh;
     right: 13%;
@@ -752,6 +766,20 @@ body footer .info p {
     right: 13%;
     text-align: right;
   }
+  body section .menu .trabajo:after {
+    left: 100%;
+    top: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(136,183,213,0);
+    border-left-color: #1f4079;
+    border-width: 2.5vh;
+    margin-top: -2.5vh;
+  }
   body section .menu .clientes img {
     top: 2.5vh;
     right: 2.5vh;
@@ -763,6 +791,31 @@ body footer .info p {
   body section .menu .clientes h3 {
     left: 13%;
     bottom: 6vh;
+  }
+  body section .menu .clientes:after,
+  body section .menu .clientes:before {
+    right: 100%;
+    top: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+  }
+  body section .menu .clientes:after {
+    border-color: rgba(136,183,213,0);
+    border-right-color: #02649d;
+    border-width: 2.5vh;
+    margin-top: -2.5vh;
+  }
+  body section .menu .clientes:before {
+    top: 45%;
+    right: 103%;
+    border-color: rgba(157,183,199,0);
+    border-right-color: #808080;
+    border-width: 2.5vh;
+    margin-top: 2.5vh;
   }
   body section .menu .impresos img {
     top: 2.5vh;
@@ -776,6 +829,31 @@ body footer .info p {
   body section .menu .impresos h3 {
     bottom: 6vh;
     right: 13%;
+  }
+  body section .menu .impresos:after,
+  body section .menu .impresos:before {
+    top: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+  }
+  body section .menu .impresos:after {
+    border-color: rgba(255,255,255,0);
+    border-top-color: #fff;
+    border-width: 2.5vh;
+    margin-left: -2.5vh;
+  }
+  body section .menu .impresos:before {
+    top: 102.5%;
+    left: 40%;
+    border-color: rgba(0,0,0,0);
+    border-top-color: #808080;
+    border-width: 2.5vh;
+    margin-left: -2.5vh;
   }
   body footer {
     bottom: 2.5vh;
@@ -862,6 +940,20 @@ body footer .info p {
     bottom: 2.5vh;
     right: 2.5vh;
   }
+  body section .menu .servicios:after {
+    bottom: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(136,183,213,0);
+    border-bottom-color: #fff;
+    border-width: 2.5vh;
+    margin-left: -2.5vh;
+  }
   body section .menu .trabajo h3 {
     top: -0.5vh;
     right: 13%;
@@ -875,6 +967,20 @@ body footer .info p {
     right: 13%;
     text-align: right;
   }
+  body section .menu .trabajo:after {
+    left: 100%;
+    top: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(136,183,213,0);
+    border-left-color: #1f4079;
+    border-width: 2.5vh;
+    margin-top: -2.5vh;
+  }
   body section .menu .clientes img {
     top: 2.5vh;
     right: 2.5vh;
@@ -886,6 +992,31 @@ body footer .info p {
   body section .menu .clientes h3 {
     left: 13%;
     bottom: 6vh;
+  }
+  body section .menu .clientes:after,
+  body section .menu .clientes:before {
+    right: 100%;
+    top: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+  }
+  body section .menu .clientes:after {
+    border-color: rgba(136,183,213,0);
+    border-right-color: #02649d;
+    border-width: 2.5vh;
+    margin-top: -2.5vh;
+  }
+  body section .menu .clientes:before {
+    top: 45%;
+    right: 103%;
+    border-color: rgba(157,183,199,0);
+    border-right-color: #808080;
+    border-width: 2.5vh;
+    margin-top: 2.5vh;
   }
   body section .menu .impresos img {
     top: 2.5vh;
@@ -899,6 +1030,31 @@ body footer .info p {
   body section .menu .impresos h3 {
     bottom: 6vh;
     right: 13%;
+  }
+  body section .menu .impresos:after,
+  body section .menu .impresos:before {
+    top: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+  }
+  body section .menu .impresos:after {
+    border-color: rgba(255,255,255,0);
+    border-top-color: #fff;
+    border-width: 2.5vh;
+    margin-left: -2.5vh;
+  }
+  body section .menu .impresos:before {
+    top: 102.5%;
+    left: 40%;
+    border-color: rgba(0,0,0,0);
+    border-top-color: #808080;
+    border-width: 2.5vh;
+    margin-left: -2.5vh;
   }
   body footer {
     bottom: 2.5vh;
@@ -924,7 +1080,6 @@ body footer .info p {
     position: relative;
     height: 13vh;
     margin: 4.5vh 40vw;
-    background-color: #008000;
   }
   body header .cabecera .logo {
     height: 100%;
@@ -965,7 +1120,7 @@ body footer .info p {
     position: absolute;
   }
   body section .menu div img {
-    width: 4vw;
+    width: 3.5vw;
     position: absolute;
   }
   body section .menu div p {
@@ -986,6 +1141,20 @@ body footer .info p {
     bottom: 2.5vh;
     right: 2.5vh;
   }
+  body section .menu .servicios:after {
+    bottom: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(136,183,213,0);
+    border-bottom-color: #fff;
+    border-width: 2.5vh;
+    margin-left: -2.5vh;
+  }
   body section .menu .trabajo h3 {
     top: -0.5vh;
     right: 13%;
@@ -999,6 +1168,20 @@ body footer .info p {
     right: 13%;
     text-align: right;
   }
+  body section .menu .trabajo:after {
+    left: 100%;
+    top: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(136,183,213,0);
+    border-left-color: #1f4079;
+    border-width: 2.5vh;
+    margin-top: -2.5vh;
+  }
   body section .menu .clientes img {
     top: 2.5vh;
     right: 2.5vh;
@@ -1010,6 +1193,31 @@ body footer .info p {
   body section .menu .clientes h3 {
     left: 13%;
     bottom: 6vh;
+  }
+  body section .menu .clientes:after,
+  body section .menu .clientes:before {
+    right: 100%;
+    top: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+  }
+  body section .menu .clientes:after {
+    border-color: rgba(136,183,213,0);
+    border-right-color: #02649d;
+    border-width: 2.5vh;
+    margin-top: -2.5vh;
+  }
+  body section .menu .clientes:before {
+    top: 45%;
+    right: 103%;
+    border-color: rgba(157,183,199,0);
+    border-right-color: #808080;
+    border-width: 2.5vh;
+    margin-top: 2.5vh;
   }
   body section .menu .impresos img {
     top: 2.5vh;
@@ -1023,6 +1231,31 @@ body footer .info p {
   body section .menu .impresos h3 {
     bottom: 6vh;
     right: 13%;
+  }
+  body section .menu .impresos:after,
+  body section .menu .impresos:before {
+    top: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+  }
+  body section .menu .impresos:after {
+    border-color: rgba(255,255,255,0);
+    border-top-color: #fff;
+    border-width: 2.5vh;
+    margin-left: -2.5vh;
+  }
+  body section .menu .impresos:before {
+    top: 102.5%;
+    left: 40%;
+    border-color: rgba(0,0,0,0);
+    border-top-color: #808080;
+    border-width: 2.5vh;
+    margin-left: -2.5vh;
   }
   body footer {
     bottom: 2.5vh;

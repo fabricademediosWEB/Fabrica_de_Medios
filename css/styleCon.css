@@ -234,7 +234,7 @@ footer .info p {
     vertical-align: 40%;
   }
   body header nav {
-    position: absolute;
+    position: fixed;
     height: 100%;
     width: 20%;
     overflow-y: auto;
@@ -517,7 +517,7 @@ footer .info p {
     margin-left: 0.5%;
   }
   body header nav {
-    position: absolute;
+    position: fixed;
     height: 100%;
     width: 15%;
     overflow-y: auto;
@@ -740,7 +740,7 @@ footer .info p {
     margin-left: 0.5%;
   }
   body header nav {
-    position: absolute;
+    position: fixed;
     height: 100%;
     width: 15%;
     overflow-y: auto;
@@ -965,7 +965,7 @@ footer .info p {
     margin-left: 1%;
   }
   body header nav {
-    position: absolute;
+    position: fixed;
     height: 100%;
     width: 12.5%;
     overflow-y: auto;
