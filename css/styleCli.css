@@ -136,7 +136,7 @@ body footer .info p {
     top: 0;
     height: 10vh;
     position: fixed;
-    left: -37.5vh;
+    left: 0vh;
   }
   body section {
     margin-top: 10%;
