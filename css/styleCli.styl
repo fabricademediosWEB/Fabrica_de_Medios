@@ -116,11 +116,59 @@ body
                     font-size 6vh
                     vertical-align: 50%
             nav
-                max-width: 50vh
+                z-index: 1
+                background-color: black
+                max-width: 50vw
                 top 0
-                height 10vh
+                height 100vh
                 position: fixed
-                left 0vh
+                left -50vw
+                .cabecera
+                    margin-top 3.5vh
+                    margin-bottom 5vh
+                    width 50vw
+                    height 12.5vh
+                    img
+                        height 100%
+                    .fabrica
+                        font-size 7.6vw
+                    .de, .medios
+                        margin 0
+                        display inline
+                    .de
+                        font-size 2vh
+                    .medios
+                        font-size 3vh
+                    .soluciones
+                        font-size 1.3vh
+                .servicios, .trabajo, .clientes, .impresos
+                    height 15vh
+                    margin-bottom 1vh
+                    p, img
+                        position: absolute
+                        margin-top 4.5vh
+                    h3
+                        display none
+                    p
+                        width 25vw
+                        font-size 3vh
+                        margin-left 1vh
+                    img
+                        height 6vh
+                        right 0vh
+                        margin-right 1vh
+                .contactenos
+                    height 4vh
+                    position: absolute
+                    bottom 3vh
+                    margin-left 7.5vw
+                    margin-right auto
+                    img
+                        height 4vh
+                    p
+                        position: relative
+                        vertical-align: 80%
+                        font-size 1.5vh
         section
             margin-top 10%
             div
@@ -162,8 +210,37 @@ body
                     font-size 6vw
                     top 23%
             nav
-                max-width: 70%
-                display none
+                max-width 30vw
+                height 100vh
+                left -30vw                
+                .cabecera
+                    height 15vh
+                    width 25vw
+                    margin-left 1vw
+                    p
+                        line-height 100%
+                    .fabrica
+                        font-size 4.25vw
+                    .de
+                        font-size 1.9vw
+                    .medios
+                        font-size 2.9vw
+                    .soluciones
+                        font-size 1.2vw
+                .servicios, .trabajo, .clientes, .impresos
+                    width 25vw
+                    margin-left 1vw 
+                    p
+                        font-size 4vh
+                        width 50%
+                        margin-top 3.5vh
+                .contactenos
+                    height 6vh
+                    img
+                        height 100%
+                    p
+                        font-size 1.5vw
+                        vertical-align: 70%
         section
             margin-top 5%
             padding 0% 5%

@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'font';
   src: url("../fuentes/swatch-webfont.eot");
-  src: url("../fuentes/swatch-webfont.eot?#iefix") format("embedded-opentype"), url("../fuentes/swatch-webfont.woff2") format("woff2"), url("../fuentes/swatch-webfont.woff") format("woff"), url("../fuentes/swatch-webfont.ttf") format("truetype"), url("../fuentes/swatch-webfont.svg#swatch_itregular") format("svg");
+  src: url("../fuentes/swatch-webfont.eot?#iefix") format('embedded-opentype'), url("../fuentes/swatch-webfont.woff2") format('woff2'), url("../fuentes/swatch-webfont.woff") format('woff'), url("../fuentes/swatch-webfont.ttf") format('truetype'), url("../fuentes/swatch-webfont.svg#swatch_itregular") format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -53,28 +53,28 @@ body header nav .cabecera .soluciones {
   margin: auto;
   color: #fff;
 }
-body header nav .servicios {
-  background-color: #fff;
+body header nav .trabajo {
+  background: #fff;
 }
-body header nav .servicios h3,
-body header nav .servicios p {
+body header nav .trabajo h3,
+body header nav .trabajo p {
   color: #1f4079;
 }
-body header nav .trabajo,
+body header nav .servicios,
 body header nav .clientes,
 body header nav .impresos {
   background: linear-gradient(to right top, #02649d 22%, #1f4079 57%);
 }
-body header nav .trabajo h3,
+body header nav .servicios h3,
 body header nav .clientes h3,
 body header nav .impresos h3,
-body header nav .trabajo p,
+body header nav .servicios p,
 body header nav .clientes p,
 body header nav .impresos p {
   color: #fff;
 }
 body header nav .contactenos {
-  margin: 0% 5%;
+  margin: 0 5%;
 }
 body header nav .contactenos p {
   color: #fff;
@@ -84,30 +84,14 @@ body header nav .contactenos p {
 body section {
   position: relative;
 }
-body section .diseno,
-body section .aplicaciones,
-body section .material,
-body section .campanas {
+body section .msd,
+body section .quideca,
+body section .biopass,
+body section .lafrancol,
+body section .cliente,
+body section .aldeas {
+  background: rgba(242,242,242,0.25);
   border-radius: 10px;
-  background: rgba(242,242,242,0.05);
-}
-body section .diseno h4,
-body section .aplicaciones h4,
-body section .material h4,
-body section .campanas h4,
-body section .diseno p,
-body section .aplicaciones p,
-body section .material p,
-body section .campanas p {
-  color: #fff;
-  font-family: fontInfo;
-  font-weight: lighter;
-}
-body section .diseno p:before,
-body section .aplicaciones p:before,
-body section .material p:before,
-body section .campanas p:before {
-  content: '- ';
 }
 body footer {
   bottom: 0px;
@@ -129,6 +113,7 @@ body footer .info p {
     margin: 5% auto;
     height: 6vh;
     width: 80%;
+    text-align: center;
   }
   body header .titulo img {
     height: 100%;
@@ -241,29 +226,25 @@ body footer .info p {
   }
   body section div {
     margin: 1% 5%;
+    height: 10vh;
+    text-align: center;
+  }
+  body section div img {
+    height: 80%;
     position: relative;
-    padding: 5px;
-  }
-  body section div h4,
-  body section div p {
-    margin-left: 7%;
-  }
-  body section div h4 {
-    font-size: 3.3vh;
-    padding-bottom: 5%;
-  }
-  body section div p {
-    font-size: 2.1vh;
+    margin-top: 2%;
   }
   body footer {
     margin-top: 5%;
     margin-bottom: 2%;
+    padding: 0;
+    position: absolute;
   }
   body footer .info p {
     font-size: 1.5vh;
   }
 }
-/*estilo horizontal 640px<*/
+/*estilo horizontal 640<px*/
 @media only screen and (max-width: 40em) and (orientation: landscape) {
   body header {
     height: 12vh;
@@ -341,19 +322,24 @@ body footer .info p {
   }
   body section {
     margin-top: 5%;
+    padding: 0% 5%;
+    text-align: center;
   }
-  body section div h4 {
-    padding-bottom: 2%;
-    font-size: 4vh;
+  body section div {
+    margin: 2% 2%;
+    height: 10vw;
+    text-align: center;
   }
-  body section div p {
-    font-size: 2.3vh;
+  body section div img {
+    height: 80%;
+    margin: 1% auto;
   }
   body footer {
     margin-top: 5%;
     margin-bottom: 2%;
     text-align: center;
     height: 5vw;
+    position: relative;
   }
   body footer .info {
     margin-top: 2%;
@@ -363,7 +349,7 @@ body footer .info p {
     font-size: 1.5vw;
   }
 }
-/*estilo vertical >640px and <1024px*/
+/*estilo vertical 640px> and <1024px*/
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
   body header .titulo {
     float: right;
@@ -578,21 +564,21 @@ body footer .info p {
   }
   body section {
     width: 80%;
-    position: relative;
     float: right;
     margin-top: 5%;
   }
   body section div {
     margin: 2% 5%;
     padding-bottom: 2%;
+    height: 10vw;
+    text-align: center;
   }
-  body section div h4 {
-    font-size: 2.15vw;
-    padding: 2% 3%;
+  body section div img {
+    height: 100%;
+    margin: 1% auto;
   }
-  body section div p {
-    font-size: 1.5vw;
-    padding-left: 3%;
+  body section .quideca img {
+    width: 80%;
   }
   body footer {
     width: 80%;
@@ -627,7 +613,7 @@ body footer .info p {
   body header nav .trabajo,
   body header nav .clientes,
   body header nav .impresos {
-    height: 7.725vw;
+    height: 13.75%;
     margin-top: 15%;
   }
   body header nav .servicios img,
@@ -663,28 +649,22 @@ body footer .info p {
   body section {
     margin-top: 2%;
   }
-  body section div h4 {
-    font-size: 2.5vh;
+  body section div {
+    margin: 1% 1%;
+    width: 22%;
+    height: 4vw;
+    text-align: center;
+    display: inline-block;
   }
-  body section div p {
-    font-size: 2vh;
-  }
-  body footer {
-    position: relative;
+  body section div img {
+    height: 100%;
+    margin: 4% auto;
   }
   body footer .info p {
     font-size: 1vh;
   }
 }
-@media only screen and (min-width: 40.063em) and (max-width: 64em) and (min-height: 600px) and (orientation: landscape) {
-  body header nav .servicios,
-  body header nav .trabajo,
-  body header nav .clientes,
-  body header nav .impresos {
-    height: 13.75%;
-  }
-}
-/*estilo vertical >1024 and <1440px*/
+/*estilo vertical 1024px> and <1440px*/
 @media only screen and (min-width: 64.063em) and (max-width: 90em) {
   body header .titulo {
     float: right;
@@ -901,19 +881,23 @@ body footer .info p {
     width: 85%;
     position: relative;
     float: right;
-    margin-top: 3%;
+    margin-top: 5%;
   }
   body section div {
-    margin: 2% 5%;
-    padding-bottom: 2%;
+    margin: 1% 1%;
+    width: 22%;
+    height: 6vw;
+    text-align: center;
+    display: inline-block;
   }
-  body section div h4 {
-    font-size: 2vw;
-    padding: 2% 3%;
+  body section div img {
+    height: 80%;
+    margin: 3% auto;
   }
-  body section div p {
-    font-size: 1vw;
-    padding-left: 3%;
+  body section .quideca img {
+    width: 80%;
+    height: 50%;
+    margin: 7.75% auto;
   }
   body footer {
     width: 80%;
@@ -925,7 +909,7 @@ body footer .info p {
     text-align: center;
   }
 }
-/*estilo horizontal >1024px and <1440px*/
+/*estilo horizontal 1024px> and <1440px*/
 @media only screen and (min-width: 64.063em) and (max-width: 90em) and (orientation: landscape) {
   body header .titulo {
     float: right;
@@ -1138,24 +1122,6 @@ body footer .info p {
     vertical-align: 40%;
     font-size: 1.3vh;
   }
-  body section {
-    width: 85%;
-    position: relative;
-    float: right;
-    margin-top: 3%;
-  }
-  body section div {
-    margin: 2% 5%;
-    padding-bottom: 2%;
-  }
-  body section div h4 {
-    font-size: 2vw;
-    padding: 2% 3%;
-  }
-  body section div p {
-    font-size: 1vw;
-    padding-left: 3%;
-  }
   body footer {
     width: 80%;
     float: right;
@@ -1163,7 +1129,7 @@ body footer .info p {
     bottom: 1%;
     margin-bottom: 2%;
     text-align: center;
-    position: relative;
+    position: absolute;
     font-size: 1.5vh;
   }
 }
@@ -1306,7 +1272,7 @@ body footer .info p {
     left: 5%;
   }
   body header nav .servicios p {
-    top: 39%;
+    top: 40%;
     width: 50%;
   }
   body header nav .servicios h3 {
@@ -1384,19 +1350,23 @@ body footer .info p {
     width: 85%;
     position: relative;
     float: right;
-    margin-top: 3%;
+    margin-top: 5%;
   }
   body section div {
-    margin: 0.5% 5%;
-    padding-bottom: 1%;
+    margin: 1% 1%;
+    width: 22%;
+    height: 5vw;
+    text-align: center;
+    display: inline-block;
   }
-  body section div h4 {
-    font-size: 2vh;
-    padding: 1% 3%;
+  body section div img {
+    height: 80%;
+    margin: 3% auto;
   }
-  body section div p {
-    font-size: 1.3vh;
-    padding-left: 3%;
+  body section .quideca img {
+    width: 80%;
+    height: 50%;
+    margin: 7% auto;
   }
   body footer {
     width: 85%;
@@ -1404,7 +1374,7 @@ body footer .info p {
     right: 0px;
     bottom: 0;
     position: absolute;
-    margin-bottom: 2%;
+    margin-bottom: 1%;
     text-align: center;
   }
   body footer p {

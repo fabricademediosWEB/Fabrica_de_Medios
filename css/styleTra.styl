@@ -9,14 +9,15 @@ degradado = -webkit-gradient(linear,left bottom,right top,color-stop(0.22, rgb(2
 
 @font-face {
     font-family: 'font';
-    src: url("../fuentes/swatch-webfont.eot");
-    src: url("../fuentes/swatch-webfont.eot?#iefix") format("embedded-opentype"),
-         url("../fuentes/swatch-webfont.woff2") format("woff2"),
-         url("../fuentes/swatch-webfont.woff") format("woff"),
-         url("../fuentes/swatch-webfont.ttf") format("truetype"),
-         url("../fuentes/swatch-webfont.svg#swatch_itregular") format("svg");
+    src: url('../fuentes/swatch-webfont.eot');
+    src: url('../fuentes/swatch-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fuentes/swatch-webfont.woff2') format('woff2'),
+         url('../fuentes/swatch-webfont.woff') format('woff'),
+         url('../fuentes/swatch-webfont.ttf') format('truetype'),
+         url('../fuentes/swatch-webfont.svg#swatch_itregular') format('svg');
     font-weight: normal;
     font-style: normal;
+
 }
 @font-face {
     font-family: 'fontInfo';
@@ -28,6 +29,7 @@ degradado = -webkit-gradient(linear,left bottom,right top,color-stop(0.22, rgb(2
          url('../fuentes/8936-webfont.svg#square721_ex_btroman') format('svg');
     font-weight: normal;
     font-style: normal;
+
 }
 a{
     text-decoration none
@@ -35,7 +37,7 @@ a{
 body
     background url('../Resources/fondo.jpg') no-repeat center center fixed
     background-size 100.5% 100.5%
-	header
+    header          
         .titulo
             p
                 font-family font, regular
@@ -61,27 +63,25 @@ body
                 .de, .medios, .soluciones
                     margin auto
                     color white
-            .servicios, .trabajo, .clientes, .impresos
+            .trabajo
+                background white
+                h3, p
+                    color azul
+            .servicios, .clientes, .impresos
                 background fondo
-                h3,p
+                h3, p
                     color white
+            .contactenos
+                margin 0 5%
+                p
+                    color white
+                    font-family font
+                    display inline-block
     section
-        label
-            font-family fontInfo, regular
-            color gray
-        .formulario
-            font-family arial
-            color azul
-            opacity 0.85
-            border-color transparent
-            border-radius 10px 10px
-            padding 2% 3%
-            margin 1% auto
-        input
-            font-family font, font-family
-            color azul
-        .enviar
-            box-shadow -5px 5px gray        
+        position: relative
+        .msd, .quideca, .biopass, .lafrancol, .cliente, .aldeas
+            background rgba(242,242,242, 0.25)
+            border-radius 10px
     footer
         bottom 0px
         width 100%      
@@ -91,29 +91,30 @@ body
                 font-family fontInfo
                 width 100%
                 text-align center
-/*estilo vertical 640px>*/                
-@media only screen and (max-width: 40em)
+/*estilo vertical 640px<*/
+@media only screen and (max-width:40em)
     body
         header
-            position relative
-            width 100%
+            position: relative
+            width: 100%
             .titulo
                 margin 5% auto
                 height 6vh
-                width 80%         
+                width 80%
+                text-align center
                 img
                     height 100%
                 p
                     font-size 5.5vw
-                    position relative
-                    vertical-align 40%
+                    position: relative
+                    vertical-align: 40%
                 .menu
-                    position absolute
+                    position: absolute
                     float right
                     right 0%
                     display inline
                     font-size 6vh
-                    vertical-align 50%
+                    vertical-align: 50%
             nav
                 z-index: 1
                 background-color: black
@@ -170,29 +171,24 @@ body
                         font-size 1.5vh
         section
             margin-top 10%
-            form
-                margin 0 5%
-                label, input, textarea
-                    display block
-                    width 90%
-                    margin-top 5%
-                    margin-bottom 3%
-                input, textarea
-                    font-size 2vh
-                .enviar
-                    position relative
-                    width 25%
-                    height 6vh
-                    left 70%
+            div
+                margin 1% 5%
+                height 10vh
+                text-align center
+                img
+                    height 80%
+                    position: relative
+                    margin-top 2%
         footer
-            position: absolute
             margin-top 5%
-            margin-bottom 2%
+            margin-bottom 2%   
+            padding 0
+            position absolute  
             .info
                 p
-                    font-size 1.5vh
-/*estilo horixontal 640px>*/
-@media only screen and (max-width: 40em) and (orientation:landscape)
+                    font-size 1.5vh  
+/*estilo horizontal 640<px*/
+@media only screen and (max-width:40em) and (orientation:landscape)
     body
         header
             height 12vh
@@ -246,26 +242,29 @@ body
                         font-size 1.5vw
                         vertical-align: 70%
         section
-            position relative
             margin-top 5%
-            form
-                margin 0 25%
-                input, textarea
-                    font-size 2vw
-                .enviar
-                    height 6vw
+            padding 0% 5%
+            text-align center
+            div
+                margin 2% 2%
+                height 10vw
+                text-align center
+                img
+                    height 80%
+                    margin 1% auto
         footer
             margin-top 5%
             margin-bottom 2%
             text-align center
-            position relative 
+            height 5vw
+            position: relative
             .info
                 margin-top 2%
                 margin-bottom 2%
                 p
                     font-size 1.5vw
-/*estilo vertical >640px and <1024px*/
-@media only screen and (min-width: 40.063em) and (max-width: 64em)
+/*estilo vertical 640px> and <1024px*/
+@media only screen and (min-width:40.063em) and (max-width: 64em)
     body
         header
             .titulo
@@ -332,6 +331,21 @@ body
                     &:after
                         border-color: fondo;
                         border-left-color: azul;
+                        border-width: 1vh;
+                        margin-top: -1vh;
+                .flechaBlanca
+                    &:before, &:after
+                        left: 100%;
+                        top: 50%;
+                        border: solid transparent;
+                        content: " ";
+                        height: 0;
+                        width: 0;
+                        position: absolute;
+                        pointer-events: none;
+                    &:after
+                        border-color: fondo;
+                        border-left-color: white;
                         border-width: 1vh;
                         margin-top: -1vh;
                 .servicios
@@ -402,20 +416,20 @@ body
                         vertical-align 40%
                         font-size 1.1vh
         section
-            width: 80%
+            width 80%
             float right
-            margin-top 10%
-            form
-                margin 0 5%
-                input, textarea, label
-                    display block;
-                    width: 70%
-                .enviar
-                    position: relative
-                    width 15%
-                    left 70%
-                    height 4vh
-                    margin-top 4vh
+            margin-top 5%
+            div
+                margin 2% 5%
+                padding-bottom 2%
+                height 10vw
+                text-align center
+                img
+                    height 100%
+                    margin 1% auto
+            .quideca
+                img
+                    width 80%
         footer
             width 80%
             float right
@@ -428,11 +442,11 @@ body
                 p
                     font-size 1.1vh
 /*estilo horizontal >640px and <1024px*/
-@media only screen and (min-width: 40.063em) and (max-width: 64em) and (orientation:landscape)
+@media only screen and (min-width:40.063em) and (max-width: 64em) and (orientation:landscape)
     body
         header
             .titulo
-                height 5vh
+                height 6vh
                 margin-top 2%
                 img
                     height 100%
@@ -451,17 +465,32 @@ body
                         font-size 6.5vh
                     p
                         font-size 2vh
+                .contactenos
+                    bottom 2%
+                    height 2vh
+                    img
+                        height 2vh
+                    p
+                        font-size 1.3vh
+                        position: relative
+                        vertical-align 35%
         section
             margin-top 2%
-            form
-                .formulario, textarea
-                    padding 1% 3%       
+            div
+                margin 1% 1%
+                width 22%
+                height 4vw
+                text-align center
+                display inline-block
+                img
+                    height 100%
+                    margin 4% auto         
         footer
             .info
                 p
                     font-size 1vh
 /*estilo vertical 1024px> and <1440px*/
-@media only screen and (min-width:64.063em) and (max-width:90em)
+@media only screen and (min-width:64.063em) and (max-width: 90em)
     body
         header
             .titulo
@@ -531,6 +560,21 @@ body
                         border-left-color: azul;
                         border-width: 1.9vw;
                         margin-top: -2.5vh;
+                .flechaBlanca
+                    &:before, &:after
+                        left: 100%;
+                        top: 50%;
+                        border: solid transparent;
+                        content: " ";
+                        height: 0;
+                        width: 0;
+                        position: absolute;
+                        pointer-events: none;
+                    &:after
+                        border-color: fondo;
+                        border-left-color: white;
+                        border-width: 1.9vw;
+                        margin-top: -2.5vh;
                 .servicios
                     img
                         float right
@@ -585,29 +629,37 @@ body
                         bottom 5%
                     h3
                         bottom 15%
+                .contactenos
+                    width 90%
+                    height 1.5vh
+                    bottom 2%
+                    position: absolute
+                    text-align center
+                    img
+                        height 1.5vh
+                    p
+                        position: relative
+                        vertical-align 40%
+                        font-size 1.3vh
         section
             width 85%
             position relative
             float right
             margin-top 5%
-            form
-                margin 0 auto
-                width 40%
-                label, input, textarea
-                    display block
-                    padding-top 2.5%
-                    padding-bottom 2.5%
-                input, textarea
-                    width: 95%
-                .formulario
-                    padding 1% 2%
-                .enviar
-                    position: relative
-                    width 15%
-                    left 85%
-                    padding 2% 2%
-                    height 6vh
-                    margin-top 4vh                
+            div
+                margin 1% 1%
+                width 22%
+                height 6vw
+                text-align center
+                display inline-block
+                img
+                    height 80%
+                    margin 3% auto
+            .quideca
+                img
+                    width 80%
+                    height 50%
+                    margin 7.75% auto                
         footer
             width 80%
             float right
@@ -616,7 +668,7 @@ body
             position: absolute
             margin-bottom 2%
             text-align center
-/*estilo horizontal >1024px and <1440px*/
+/*estilo horizontal 1024px> and <1440px*/
 @media only screen and (min-width:64.063em) and (max-width: 90em) and (orientation:landscape)
     body
         header
@@ -774,9 +826,9 @@ body
             right 0px
             bottom 1%
             margin-bottom 2%
-            margin-top 3%
             text-align center
-            position relative
+            position absolute
+
             font-size 1.5vh
 /*estilo vertical >1440px and <1920px*/
 @media only screen and (min-width:90.063em) and (max-width: 120em)
@@ -784,7 +836,7 @@ body
         header
             .titulo
                 float right
-                width 87.5%
+                width 85%
                 margin-top 2% 
                 height 6vh
                 text-align center
@@ -873,7 +925,7 @@ body
                         float left
                         left 5%
                     p
-                        top 39%
+                        top 40%
                         width 50%
                     h3
                         top 5%
@@ -917,37 +969,46 @@ body
                         text-align right
                         bottom 5%
                     h3
-                        bottom 15%  
+                        bottom 15%
+                .contactenos
+                    position absolute
+                    width 90%
+                    height 3vh
+                    bottom 2%
+                    text-align center
+                    img
+                        height 3vh
+                    p
+                        position: relative
+                        vertical-align 50%
+                        font-size 1.3vh 
         section
-            width 87.5%
+            width 85%
             position relative
             float right
             margin-top 5%
-            form
-                margin 0 auto
-                width 35%
-                label, input, textarea
-                    display block
-                    padding-top 2.5%
-                    padding-bottom 2.5%
-                input, textarea
-                    width: 95%
-                .formulario
-                    padding 1% 2%
-                .enviar
-                    position: relative
-                    width 15%
-                    left 85%
-                    padding 2% 2%
-                    height 6vh
-                    margin-top 4vh   
+            div
+                margin 1% 1%
+                width 22%
+                height 5vw
+                text-align center
+                display inline-block
+                img
+                    height 80%
+                    margin 3% auto
+            .quideca
+                img
+                    width 80%
+                    height 50%
+                    margin 7% auto 
         footer
             width 85%
             float right
             right 0px
             bottom 0
             position: absolute
-            margin-bottom 2%
+            margin-bottom 1%
             text-align center
             p
-                font-size 1.3vh
+                font-size 1.3vh        
+    

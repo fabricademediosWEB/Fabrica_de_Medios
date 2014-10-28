@@ -127,7 +127,94 @@ footer .info p {
     vertical-align: 50%;
   }
   body header nav {
+    z-index: 1;
+    background-color: #000;
+    max-width: 50vw;
+    top: 0;
+    height: 100vh;
+    position: fixed;
+    left: -50vw;
+  }
+  body header nav .cabecera {
+    margin-top: 3.5vh;
+    margin-bottom: 5vh;
+    width: 50vw;
+    height: 12.5vh;
+  }
+  body header nav .cabecera img {
+    height: 100%;
+  }
+  body header nav .cabecera .fabrica {
+    font-size: 7.6vw;
+  }
+  body header nav .cabecera .de,
+  body header nav .cabecera .medios {
+    margin: 0;
+    display: inline;
+  }
+  body header nav .cabecera .de {
+    font-size: 2vh;
+  }
+  body header nav .cabecera .medios {
+    font-size: 3vh;
+  }
+  body header nav .cabecera .soluciones {
+    font-size: 1.3vh;
+  }
+  body header nav .servicios,
+  body header nav .trabajo,
+  body header nav .clientes,
+  body header nav .impresos {
+    height: 15vh;
+    margin-bottom: 1vh;
+  }
+  body header nav .servicios p,
+  body header nav .trabajo p,
+  body header nav .clientes p,
+  body header nav .impresos p,
+  body header nav .servicios img,
+  body header nav .trabajo img,
+  body header nav .clientes img,
+  body header nav .impresos img {
+    position: absolute;
+    margin-top: 4.5vh;
+  }
+  body header nav .servicios h3,
+  body header nav .trabajo h3,
+  body header nav .clientes h3,
+  body header nav .impresos h3 {
     display: none;
+  }
+  body header nav .servicios p,
+  body header nav .trabajo p,
+  body header nav .clientes p,
+  body header nav .impresos p {
+    width: 25vw;
+    font-size: 3vh;
+    margin-left: 1vh;
+  }
+  body header nav .servicios img,
+  body header nav .trabajo img,
+  body header nav .clientes img,
+  body header nav .impresos img {
+    height: 6vh;
+    right: 0vh;
+    margin-right: 1vh;
+  }
+  body header nav .contactenos {
+    height: 4vh;
+    position: absolute;
+    bottom: 3vh;
+    margin-left: 7.5vw;
+    margin-right: auto;
+  }
+  body header nav .contactenos img {
+    height: 4vh;
+  }
+  body header nav .contactenos p {
+    position: relative;
+    vertical-align: 80%;
+    font-size: 1.5vh;
   }
   body section {
     margin-top: 10%;
@@ -187,6 +274,56 @@ footer .info p {
     display: inline;
     font-size: 6vw;
     top: 23%;
+  }
+  body header nav {
+    max-width: 30vw;
+    height: 100vh;
+    left: -30vw;
+  }
+  body header nav .cabecera {
+    height: 15vh;
+    width: 25vw;
+    margin-left: 1vw;
+  }
+  body header nav .cabecera p {
+    line-height: 100%;
+  }
+  body header nav .cabecera .fabrica {
+    font-size: 4.25vw;
+  }
+  body header nav .cabecera .de {
+    font-size: 1.9vw;
+  }
+  body header nav .cabecera .medios {
+    font-size: 2.9vw;
+  }
+  body header nav .cabecera .soluciones {
+    font-size: 1.2vw;
+  }
+  body header nav .servicios,
+  body header nav .trabajo,
+  body header nav .clientes,
+  body header nav .impresos {
+    width: 25vw;
+    margin-left: 1vw;
+  }
+  body header nav .servicios p,
+  body header nav .trabajo p,
+  body header nav .clientes p,
+  body header nav .impresos p {
+    font-size: 4vh;
+    width: 50%;
+    margin-top: 3.5vh;
+  }
+  body header nav .contactenos {
+    height: 6vh;
+  }
+  body header nav .contactenos img {
+    height: 100%;
+  }
+  body header nav .contactenos p {
+    font-size: 1.5vw;
+    vertical-align: 70%;
   }
   body section {
     position: relative;
